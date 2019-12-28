@@ -1,6 +1,15 @@
-import React from 'react';
-import { Button } from 'antd';
+import React from "react";
+import { Button } from "antd";
+import { connect } from "react-redux";
 
-const Home = () => <Button>Hello World</Button>;
+class Home extends React.Component {
+	render() {
+		return <Button>{this.props.temp.message}</Button>;
+	}
+}
 
-export default Home;
+const mapStateToProps = state => ({
+	temp: state.temp,
+});
+
+export default connect(mapStateToProps)(Home);
