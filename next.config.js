@@ -1,27 +1,17 @@
-const withCss = require("@zeit/next-css");
-
-module.exports = withCss({
-	webpack: (config, { isServer }) => {
-		if (isServer) {
-			const antStyles = /antd\/.*?\/style\/css.*?/;
-			const origExternals = [...config.externals];
-			config.externals = [
-				(context, request, callback) => {
-					if (request.match(antStyles)) return callback();
-					if (typeof origExternals[0] === "function") {
-						origExternals[0](context, request, callback);
-					} else {
-						callback();
-					}
+module.exports = {
+	webpack(config) {
+		config.module.rules.push({
+			test: /\.(png|svg)$/,
+			use: {
+				loader: "url-loader",
+				options: {
+					limit: 8192,
+					publicPath: "/_next/static/",
+					outputPath: "static/",
+					name: "[name].[ext]",
 				},
-				...(typeof origExternals[0] === "function" ? [] : origExternals)
-			];
-
-			config.module.rules.unshift({
-				test: antStyles,
-				use: "null-loader"
-			});
-		}
+			},
+		});
 		return config;
-	}
-});
+	},
+};

@@ -1,7 +1,8 @@
-import { Provider } from 'react-redux';
-import App from 'next/app';
-import withRedux from 'next-redux-wrapper';
-import { initStore } from '../redux';
+import { Provider } from "react-redux";
+import App from "next/app";
+import withRedux from "next-redux-wrapper";
+import "semantic-ui-css/semantic.min.css";
+import { initStore } from "../redux";
 
 class MyApp extends App {
 	static async getInitialProps({ Component, ctx }) {
