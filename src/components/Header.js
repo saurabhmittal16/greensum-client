@@ -1,17 +1,19 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Menu, Icon } from "semantic-ui-react";
 
 const CustomIcon = ({ name }) => (
 	<Icon name={name} style={{ fontSize: "10px", marginBottom: "3px" }} />
 );
 
-const MenuItemLink = ({ path, name }) => (
+const MenuItemLink = ({ path, name, current }) => (
 	<Menu.Item>
 		<Link href={path}>
 			<a
 				style={{
 					color: "black",
+					borderBottom: current === path ? "solid 1px black" : "none",
 				}}
 			>
 				{name}
@@ -36,22 +38,40 @@ const MenuItemLinkIcon = ({ path, name, icon }) => (
 );
 
 export default function Header() {
+	const router = useRouter();
+	console.log(router.pathname.slice(1));
 	return (
 		<React.Fragment>
 			<Menu
 				secondary
 				style={{
-					margin: "30px",
+					margin: "30px 120px",
 					display: "flex",
 					justifyContent: "center",
+					height: "60px",
 				}}
 			>
-				<MenuItemLink name="Home" path="/" />
-				<MenuItemLink name="About" path="/about" />
-				<MenuItemLink name="Contact" path="/contact" />
-				<MenuItemLink name="Support" path="/support" />
+				<MenuItemLink name="Home" path="/" current={router.pathname} />
+				<MenuItemLink
+					name="About"
+					path="/about"
+					current={router.pathname}
+				/>
+				<MenuItemLink
+					name="Contact"
+					path="/contact"
+					current={router.pathname}
+				/>
+				<MenuItemLink
+					name="Support"
+					path="/support"
+					current={router.pathname}
+				/>
 
-				<img src="/logo.png" style={{ margin: "auto" }} />
+				<img
+					src="/logo.png"
+					style={{ margin: "auto", height: "100%" }}
+				/>
 
 				<Menu.Item>
 					<CustomIcon name="call" />
