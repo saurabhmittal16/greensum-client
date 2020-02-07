@@ -45,7 +45,7 @@ export default function Header() {
 			<Menu
 				secondary
 				style={{
-					margin: "30px 120px",
+					margin: "60px 120px",
 					display: "flex",
 					justifyContent: "center",
 					height: "60px",
@@ -83,9 +83,9 @@ export default function Header() {
 			</Menu>
 			<div
 				style={{
-					backgroundColor: "rgb(7, 125, 7)",
+					backgroundColor: "#276b2e",
 					marginTop: "20px",
-					fontSize: "28px",
+					fontSize: "32px",
 					fontWeight: "bold",
 					color: "white",
 				}}
@@ -95,7 +95,7 @@ export default function Header() {
 					style={{
 						display: "flex",
 						justifyContent: "space-between",
-						padding: "50px 0",
+						padding: "64px 0",
 					}}
 				>
 					<span>Our Store</span>
