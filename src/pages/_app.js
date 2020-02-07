@@ -2,6 +2,7 @@ import { Provider } from "react-redux";
 import App from "next/app";
 import withRedux from "next-redux-wrapper";
 import "semantic-ui-css/semantic.min.css";
+import "../styles.css";
 import { initStore } from "../redux";
 
 class MyApp extends App {

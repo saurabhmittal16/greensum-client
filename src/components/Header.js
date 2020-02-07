@@ -81,6 +81,27 @@ export default function Header() {
 				<MenuItemLinkIcon name="Account" path="/account" icon="user" />
 				<MenuItemLinkIcon name="Cart" path="/cart" icon="cart" />
 			</Menu>
+			<div
+				style={{
+					backgroundColor: "rgb(7, 125, 7)",
+					marginTop: "20px",
+					fontSize: "28px",
+					fontWeight: "bold",
+					color: "white",
+				}}
+			>
+				<div
+					className="container"
+					style={{
+						display: "flex",
+						justifyContent: "space-between",
+						padding: "50px 0",
+					}}
+				>
+					<span>Our Store</span>
+					<span>home/ shop</span>
+				</div>
+			</div>
 		</React.Fragment>
 	);
 }
