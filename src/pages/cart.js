@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const cart = () => {
+const Cart = () => {
 	return (
 		<Layout>
 			<h1>Hello From cart</h1>
@@ -9,5 +9,5 @@ const cart = () => {
 	);
 };
 
-export default cart;
+export default Cart;
 	
