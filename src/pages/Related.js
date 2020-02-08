@@ -5,7 +5,7 @@ export default function Related() {
 	return (
 		<div
 			style={{
-				margin: "60px 120px",
+				width: "calc((100vw-400))",
 				maxHeight: "400px",
 				overflowX: "scroll",
 				overflowY: "hidden",

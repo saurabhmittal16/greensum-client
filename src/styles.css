@@ -6,10 +6,3 @@
 .main {
 	margin-top: 40px;
 }
-
-.ui.card > .image > img {
-	border-radius: 20px !important;
-}
-.relateCard {
-	box-shadow: none !important;
-}
