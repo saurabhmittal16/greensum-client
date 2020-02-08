@@ -6,6 +6,7 @@ export default function Layout(props) {
 		<div>
 			<Header />
 			<div className="container main">{props.children}</div>
+
 			<Related />
 		</div>
 	);
