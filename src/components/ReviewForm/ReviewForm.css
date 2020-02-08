@@ -1,0 +1,29 @@
+.review-text-input{
+    display:block;
+  }
+  .review-email-input{
+    float:right;
+  }
+  .review-name-input{
+    float: left;
+  }
+  .review-intro{
+    display: inline;
+  }
+  .rating-text{
+    display: inline;
+  }
+  .review-text{
+    display: inline;
+  }
+  .review-name{
+    display: inline;
+  }
+  .review-email{
+    display: inline;
+  }
+  
+  .root{
+    width: 200;
+      display: 'flex';
+  }
