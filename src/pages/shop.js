@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const shop = () => {
+const Shop = () => {
 	return (
 		<Layout>
 			<h1>Hello From shop</h1>
@@ -9,5 +9,5 @@ const shop = () => {
 	);
 };
 
-export default shop;
+export default Shop;
 	

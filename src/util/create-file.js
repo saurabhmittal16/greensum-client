@@ -1,5 +1,12 @@
 const fs = require("fs");
 
+String.prototype.toTitleCase = function() {
+	text = this;
+	first = text[0];
+	rest = text.slice(1);
+	return first.toUpperCase() + rest;
+};
+
 const files = [
 	"shop",
 	"about",
@@ -8,6 +15,7 @@ const files = [
 	"account",
 	"cart",
 	"search",
+	"playground",
 ];
 
 files.forEach(file => {
@@ -16,7 +24,7 @@ files.forEach(file => {
 		`import React from "react";
 import Layout from "../components/Layout";
 
-const ${file} = () => {
+const ${file.toTitleCase()} = () => {
 	return (
 		<Layout>
 			<h1>Hello From ${file}</h1>
@@ -24,7 +32,7 @@ const ${file} = () => {
 	);
 };
 
-export default ${file};
+export default ${file.toTitleCase()};
 	`,
 		function(err) {
 			console.log(err);

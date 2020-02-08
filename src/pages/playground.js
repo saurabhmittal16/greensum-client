@@ -1,13 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const Support = () => {
+const Playground = () => {
 	return (
 		<Layout>
-			<h1>Hello From support</h1>
+			<h1>Test your components here</h1>
 		</Layout>
 	);
 };
 
-export default Support;
-	
+export default Playground;

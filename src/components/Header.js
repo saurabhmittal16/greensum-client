@@ -45,7 +45,7 @@ export default function Header() {
 			<Menu
 				secondary
 				style={{
-					margin: "30px 120px",
+					margin: "60px 120px",
 					display: "flex",
 					justifyContent: "center",
 					height: "60px",
@@ -81,6 +81,27 @@ export default function Header() {
 				<MenuItemLinkIcon name="Account" path="/account" icon="user" />
 				<MenuItemLinkIcon name="Cart" path="/cart" icon="cart" />
 			</Menu>
+			<div
+				style={{
+					backgroundColor: "#276b2e",
+					marginTop: "20px",
+					fontSize: "32px",
+					fontWeight: "bold",
+					color: "white",
+				}}
+			>
+				<div
+					className="container"
+					style={{
+						display: "flex",
+						justifyContent: "space-between",
+						padding: "64px 0",
+					}}
+				>
+					<span>Our Store</span>
+					<span>home/ shop</span>
+				</div>
+			</div>
 		</React.Fragment>
 	);
 }
