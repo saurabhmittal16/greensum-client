@@ -83,12 +83,12 @@ const RelatedProducts = () => (
 
 			<Container textAlign="center">
 				<Button.Group size="mini">
-					{range(TOTAL_SLIDES).map(index => (
+					{range(TOTAL_SLIDES / VISIBLE_SLIDES).map(index => (
 						<Button
 							as={Dot}
-							key={index}
+							key={index * VISIBLE_SLIDES}
 							icon="circle"
-							slide={index}
+							slide={index * VISIBLE_SLIDES}
 							style={{ background: "white" }}
 						/>
 					))}
