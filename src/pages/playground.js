@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Related from "../pages/Related";
+import Related from "../components/Related";
 
 const Playground = () => {
 	return (
