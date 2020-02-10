@@ -74,7 +74,7 @@ class ReviewForm extends Component {
 		}
 
 		return (
-			<div id="container">
+			<div>
 				<form
 					id="review"
 					onSubmit={e => {
@@ -134,13 +134,13 @@ class ReviewForm extends Component {
 
 				<style jsx>
 					{`
-						#container {
-							max-width: 800px;
-							width: 100%;
-							margin: 0 auto;
-							position: relative;
-							align-items: center;
-						}
+						// #container {
+						// 	max-width: 800px;
+						// 	width: 100%;
+						// 	margin: 0 auto;
+						// 	position: relative;
+						// 	align-items: center;
+						// }
 
 						#closeCantStore {
 							align-items: center;
@@ -150,11 +150,11 @@ class ReviewForm extends Component {
 						}
 
 						#review {
-							background: #f9f9f9;
-							padding: 25px;
-							margin: 150px 0;
-							box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2),
-								0 5px 5px 0 rgba(0, 0, 0, 0.24);
+							// background: #f9f9f9;
+							// padding: 25px;
+							// margin: 150px 0;
+							// box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2),
+							// 	0 5px 5px 0 rgba(0, 0, 0, 0.24);
 						}
 
 						textarea,

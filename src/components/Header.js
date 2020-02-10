@@ -81,6 +81,7 @@ export default function Header() {
 				<MenuItemLinkIcon name="Account" path="/account" icon="user" />
 				<MenuItemLinkIcon name="Cart" path="/cart" icon="cart" />
 			</Menu>
+			{/* TODO: Export to seperate component */}
 			<div
 				style={{
 					backgroundColor: "#276b2e",

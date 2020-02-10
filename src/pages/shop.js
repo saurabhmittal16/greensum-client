@@ -1,13 +1,17 @@
 import React from "react";
 import Layout from "../components/Layout";
+import MainProduct from "../components/MainProduct";
+import Review from "../components/Review";
+import Related from "../components/Related";
 
 const Shop = () => {
 	return (
 		<Layout>
-			<h1>Hello From shop</h1>
+			<MainProduct />
+			<Review />
+			<Related />
 		</Layout>
 	);
 };
 
 export default Shop;
-	

@@ -36,9 +36,9 @@ const CardExampleCard = ({ name, image, price, link }) => {
 					/>
 					{price}
 				</Card.Description>
-				<a href={link} className="ui inverted primary button">
+				{/* <a href={link} className="ui inverted primary button">
 					About
-				</a>
+				</a> */}
 			</Card.Content>
 			{/*<Card.Content extra>
     			<a>

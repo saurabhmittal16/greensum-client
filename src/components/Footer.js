@@ -23,12 +23,11 @@ const FooterLink = ({ path, name }) => (
 
 const CustomIcon = ({ name, path }) => (
 	<Link href={path}>
-		<a style={{ color: "#FFFF", margin: "0 auto" }}>
+		<a style={{ color: "#FFFFFF", margin: "0 auto" }}>
 			<Icon
 				circular
-				color="white"
 				name={name}
-				style={{ border: "0.115rem solid" }}
+				style={{ border: "0.115rem solid", color: "white" }}
 			/>
 		</a>
 	</Link>
@@ -49,6 +48,8 @@ const Footer = () => {
 			stackable
 			columns={3}
 			style={{
+				marginTop: "5rem",
+				marginBottom: "5rem",
 				backgroundColor: "#489064",
 				borderRadius: "35px",
 				color: "#FFFF",

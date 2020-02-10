@@ -1,18 +1,21 @@
 import React from "react";
 import Card from "./RelatedCard";
+import { Header } from "semantic-ui-react";
 
 export default function Related() {
 	return (
 		<div
 			style={{
-				width: "calc((100vw-400))",
+				// width: "calc((100vw-400))",
 				maxHeight: "400px",
 				overflowX: "scroll",
 				overflowY: "hidden",
 				whiteSpace: "nowrap",
+				marginTop: "64px",
 			}}
 			className="relatedDiv"
 		>
+			<Header as="h1">Related Products</Header>
 			<div
 				style={{
 					display: "inline-block",
