@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./RelatedCard";
+import Card from "../Related/RelatedCard";
 import { Header } from "semantic-ui-react";
 
 export default function Related() {
