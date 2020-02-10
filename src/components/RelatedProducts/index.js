@@ -23,7 +23,7 @@ const CustomCardSlide = ({ index, name, price, image }) => (
 );
 
 const RelatedProducts = () => (
-	<div style={{ paddingTop: "64px" }}>
+	<Container style={{ paddingTop: "64px" }}>
 		<CarouselProvider
 			visibleSlides={VISIBLE_SLIDES}
 			naturalSlideWidth={1}
@@ -95,7 +95,7 @@ const RelatedProducts = () => (
 				</Button.Group>
 			</Container>
 		</CarouselProvider>
-	</div>
+	</Container>
 );
 
 export default RelatedProducts;

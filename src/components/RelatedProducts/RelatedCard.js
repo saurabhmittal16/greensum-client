@@ -3,12 +3,15 @@ import { Card, Icon, Image } from "semantic-ui-react";
 
 const CardExampleCard = ({ name, image, price, link }) => {
 	return (
-		<Card style={{ boxShadow: "none !important" }} className="relateCard">
+		<Card
+			style={{ boxShadow: "none", border: "none" }}
+			className="relateCard"
+		>
 			<Image
 				src={image}
 				wrapped
 				ui={false}
-				style={{ background: "none" }}
+				style={{ width: "95%" }}
 				className="relatedImage"
 			/>
 			<style jsx>{`
@@ -18,13 +21,10 @@ const CardExampleCard = ({ name, image, price, link }) => {
 
 				.relateCard :global(img.relatedImage) {
 					//for all the images inside this card component
-					border-radius: 20px !important;
-				}
-				.relateCard {
-					box-shadow: none !important;
+					// border-radius: 20px !important;
 				}
 			`}</style>
-			<Card.Content textAlign="center">
+			<Card.Content style={{ textAlign: "center", width: "95%" }}>
 				<Card.Header>{name}</Card.Header>
 				<Card.Description>
 					<Icon
