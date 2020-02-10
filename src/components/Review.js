@@ -1,15 +1,12 @@
 import React from "react";
 import { Item, Container,Rating } from "semantic-ui-react";
-//import { Rating, Item } from "semantic-ui-react";
-
-//import ReviewItem from "./reviewItem";
 const ReviewItem = props => {
 	let { name, date, text, profilePic, rating } = props;
 	return (
 		// for the time being I'm using a sample image 
 			<Item>
 				<Item.Image
-					src="../../avatar.png"
+					src="../../test-images/avatar.png"
                     size="tiny"
 					style={{float:'left'}}
 				/>
