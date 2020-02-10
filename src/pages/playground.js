@@ -5,7 +5,6 @@ const Playground = () => {
 	return (
 		<Layout>
 			<h1>Test your components here</h1>
-			
 		</Layout>
 	);
 };
