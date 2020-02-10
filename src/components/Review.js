@@ -1,6 +1,6 @@
 import React from "react";
 import { Item, Container, Rating, Divider } from "semantic-ui-react";
-import ReviewForm from "./ReviewForm";
+import AddReview from "./AddReview";
 
 const ReviewItem = props => {
 	let { name, date, text, profilePic, rating } = props;
@@ -58,7 +58,7 @@ const Review = props => {
 				))}
 			</Item.Group>
 			<Divider />
-			<ReviewForm />
+			<AddReview />
 		</Container>
 	);
 };
