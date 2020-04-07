@@ -72,10 +72,7 @@ const ProductPrice = ({ price }) => {
 const ProductDescription = ({ description }) => {
 	return (
 		<div
-			style={{
-				marginTop: "3rem",
-				color: "#838383",
-			}}
+			className="product-header"
 		>
 			<p>{description}</p>
 		</div>
