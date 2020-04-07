@@ -2,7 +2,7 @@
 
 Client web application for GreenSum Project
 
-## Technologies-
+## Technologies -
 
 Next  
 React  
@@ -21,3 +21,9 @@ Semantic UI
     ```shell
     yarn dev
     ```
+
+## Bugs -
+
+-   [ ] Make large banner dynamic (should display login for /login)
+-   [ ] Make header and footer reactive
+-   [ ] Update header and footer to use global
