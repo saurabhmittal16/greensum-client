@@ -27,7 +27,7 @@ const CustomIcon = ({ name, path }) => (
 			<Icon
 				circular
 				name={name}
-				style={{ border: "0.115rem solid", color: "white" }}
+				style={{ border: "0.108rem solid", color: "white" }}
 			/>
 		</a>
 	</Link>
@@ -48,10 +48,13 @@ const Footer = () => {
 			stackable
 			columns={3}
 			style={{
+				position:"absolute",
+				bottom:"1px",
+				width:"100%",
+
 				marginTop: "5rem",
-				marginBottom: "5rem",
-				backgroundColor: "#489064",
-				borderRadius: "35px",
+				backgroundColor: "#046B2D",
+				borderRadius: "40px 40px 0px 0px ",
 				color: "#FFFF",
 				justifyContent: "center",
 			}}
@@ -87,17 +90,12 @@ const Footer = () => {
 						alt="footer logo "
 						style={{
 							display: "block",
-							width: "50%",
+							width: "65%",
 							marginLeft: "auto",
 							marginRight: "auto",
 						}}
 					/>
-					<Segment basic style={{ display: "flex" }}>
-						<CustomIcon name="facebook f" path="/" />
-						<CustomIcon name="instagram" path="/" />
-						<CustomIcon name="twitter" path="/" />
-						<CustomIcon name="google plus g" path="/" />
-					</Segment>
+					
 				</Segment>
 			</Grid.Column>
 			<Grid.Column>
@@ -115,11 +113,16 @@ const Footer = () => {
 					<FooterLink name="Orders and Tracking" path="/" />
 					<FooterLink name="Return Policy" path="/" />
 					<FooterLink name="Customer Care" path="/" />
-					<br />
-					<ImageIcon path="/footer/Visa.png" />
-					<ImageIcon path="/footer/Mastercard.png" />
-					<ImageIcon path="/footer/Paypal.png" />
+
+					
 				</Segment>
+				
+				<Segment basic style={{ display: "flex", margin:"auto", width:"75%" }}>
+						<CustomIcon name="facebook f" path="/" />
+						<CustomIcon name="instagram" path="/" />
+						<CustomIcon name="twitter" path="/" />
+						<CustomIcon name="google plus g" path="/" />
+					</Segment>
 			</Grid.Column>
 		</Grid>
 	);
