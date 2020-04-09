@@ -1,0 +1,77 @@
+.contact-us {
+	display: flex, inline-block;
+	align-self: center;
+	position: relative;
+	margin: auto;
+	box-shadow: 5px 5px 5px rgba(42, 67, 141, 0.2);
+	border-radius: 20px;
+	padding: $medium-space;
+	overflow: auto;
+	z-index: 999;
+	min-width: 700px;
+}
+
+.form-header {
+	max-width: 340px;
+	font-size: 27px;
+	color: green;
+}
+
+.contact-us__form {
+	margin-left: 5px;
+	margin-top: 5px;
+	padding: 1px;
+	width: 45%;
+	position: relative;
+	float: left;
+}
+
+.contact-us__info {
+	width: 45%;
+	position: relative;
+	float: right;
+	margin: 2.5%;
+	padding: 3%;
+	text-align: center left;
+}
+
+.form-input {
+	min-width: 250px;
+	width: 70%;
+	padding: 3px;
+	margin: 3px;
+	border-radius: 4px;
+}
+
+.form__label {
+	min-width: 200px;
+	padding: 3px;
+	margin: 3px;
+}
+
+.form-submit {
+	background-color: green($color: #000000);
+}
+
+.info-para {
+	min-width: 200px;
+	padding: 5px;
+	margin: 10px;
+	color: green;
+}
+
+.info-header {
+	min-width: 200px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.form {
+	margin: 25px;
+}
+
+.contact-us__email,
+.contact-us__landmark,
+.contact-us__number {
+	margin-bottom: 15px;
+}
