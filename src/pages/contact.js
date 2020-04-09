@@ -1,13 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Contact_Us from "../components/ContactUs";
 
 const Contact = () => {
 	return (
 		<Layout>
-			<h1>Hello From contact</h1>
+			<Contact_Us />
 		</Layout>
 	);
 };
 
 export default Contact;
-	
