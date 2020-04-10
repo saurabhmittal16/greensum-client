@@ -50,7 +50,7 @@ const Footer = () => {
 			style={{
 				position:"absolute",
 				bottom:"1px",
-				width:"100%",
+				width:"100% !important",
 
 				marginTop: "5rem",
 				backgroundColor: "#046B2D",
