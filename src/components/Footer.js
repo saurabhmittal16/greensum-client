@@ -51,7 +51,7 @@ const Footer = () => {
 				position:"absolute",
 				bottom:"1px",
 				width:"100% !important",
-
+				paddingLeft:"2rem",
 				marginTop: "5rem",
 				backgroundColor: "#046B2D",
 				borderRadius: "40px 40px 0px 0px ",
@@ -90,7 +90,8 @@ const Footer = () => {
 						alt="footer logo "
 						style={{
 							display: "block",
-							width: "65%",
+							height:"auto",
+							width: "55%",
 							marginLeft: "auto",
 							marginRight: "auto",
 						}}
