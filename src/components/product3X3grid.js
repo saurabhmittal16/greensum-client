@@ -1,17 +1,15 @@
 import React from "react";
-import { Grid,Card,Image, CardDescription } from "semantic-ui-react";
+import { Grid,Container,Card,Image, CardDescription } from "semantic-ui-react";
 const ProductCard = (props) => {
     let data = props['data'];
     let src = data['src'],name = data['name'],price = data['price'];
     return (
         <Grid.Column>
-            <Card style={box}>
-                <Image src={src} style={img}/>
-                <Card.Content>
-                    <Card.Header style = {textName}>{name}</Card.Header>
-                    <CardDescription style={textPrice}>{price}</CardDescription>
-                </Card.Content>
-            </Card>
+            <Container className='box'>
+                <Image src={src} className='img'/>
+                    <div className='textName'>{name}</div>
+                    <div className='textPrice'>{price}</div>
+            </Container>
             </Grid.Column>
     );
 }
@@ -88,35 +86,35 @@ product3X3grid.defaultProps = {
     },
 ]
 }
-const textName={
-    fontFamily: 'Poppins',
-    fontStyle: 'normal',
-    fontWeight: '500',
-    lineHeight: '156.5%',
-    letterSpacing: '-0.03em',
-    justifyContent: 'center',
-    display: 'flex'
+// const textName={
+//     fontFamily: 'Poppins',
+//     fontStyle: 'normal',
+//     fontWeight: '500',
+//     lineHeight: '156.5%',
+//     letterSpacing: '-0.03em',
+//     justifyContent: 'center',
+//     display: 'flex'
 
-};
-const textPrice={
-    fontFamily: 'Poppins',
-    fontStyle: 'normal',
-    fontWeight: '600',
-    alignItems: 'center',
-    letterSpacing: '-0.03em',
-    display: 'flex',
-    justifyContent: 'center',
+// };
+// const textPrice={
+//     fontFamily: 'Poppins',
+//     fontStyle: 'normal',
+//     fontWeight: '600',
+//     alignItems: 'center',
+//     letterSpacing: '-0.03em',
+//     display: 'flex',
+//     justifyContent: 'center',
     
-};
-const box={
-    background: '#DFEEFF',
-    borderRadius: '24px',
-};
-const img = {
-    paddingTop : '10%',
-    paddingLeft : '10%',
-    paddingRight : '10%',
-    borderRadius: '24px',
-    background: 'rgba(0,0,0,0)'
-}
+// };
+// const box={
+//     background: '#DFEEFF',
+//     borderRadius: '24px',
+// };
+// const img = {
+//     paddingTop : '10%',
+//     paddingLeft : '10%',
+//     paddingRight : '10%',
+//     borderRadius: '24px',
+//     background: 'rgba(0,0,0,0)'
+// }
 export default product3X3grid;
