@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid,Container,Card,Image, CardDescription } from "semantic-ui-react";
+import { Grid,Container,Image } from "semantic-ui-react";
 const ProductCard = (props) => {
     let data = props['data'];
     let src = data['src'],name = data['name'],price = data['price'];
