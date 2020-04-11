@@ -4,13 +4,23 @@ const ProductCard = (props) => {
     let data = props['data'];
     let src = data['src'],name = data['name'],price = data['price'];
     return (
+        // <Grid.Column>
+        //     <Container className='box'>
+        //         <Image src={src} className='img'/>
+        //             <div className='textName'>{name}</div>
+        //             <div className='textPrice'>{price}</div>
+        //     </Container>
+        // </Grid.Column>
         <Grid.Column>
-            <Container className='box'>
-                <Image src={src} className='img'/>
-                    <div className='textName'>{name}</div>
-                    <div className='textPrice'>{price}</div>
-            </Container>
-            </Grid.Column>
+            <Card className='box'>
+                <Image className='img' src={src}/>
+                    <Card.Description>
+                        <Card.Header className='textName'>{name}</Card.Header>
+                        <Card.Meta className='textPrice'>{price}</Card.Meta>
+                    </Card.Description>
+                
+            </Card>
+        </Grid.Column>
     );
 }
 const product3X3grid = (props) => {
