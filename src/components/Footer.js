@@ -43,15 +43,15 @@ const ImageIcon = ({ path }) => (
 
 const Footer = () => {
 	return (
+		
 		<Grid
 			container
 			stackable
 			columns={3}
 			style={{
-				position:"absolute",
-				bottom:"1px",
-				width:"100% !important",
+				width:"100%",
 				paddingLeft:"2rem",
+				paddingRight:"2rem",
 				marginTop: "5rem",
 				backgroundColor: "#046B2D",
 				borderRadius: "40px 40px 0px 0px ",
