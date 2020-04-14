@@ -1,101 +1,103 @@
 import React from "react";
-import { Grid,Container,Card,Image, CardDescription } from "semantic-ui-react";
-const ProductCard = (props) => {
-    let data = props['data'];
-    let src = data['src'],name = data['name'],price = data['price'];
-    return (
-        // <Grid.Column>
-        //     <Container className='box'>
-        //         <Image src={src} className='img'/>
-        //             <div className='textName'>{name}</div>
-        //             <div className='textPrice'>{price}</div>
-        //     </Container>
-        // </Grid.Column>
-        <Grid.Column>
-            <Card className='box'>
-                <Image className='img' src={src}/>
-                    <Card.Description>
-                        <Card.Header className='textName'>{name}</Card.Header>
-                        <Card.Meta className='textPrice'>{price}</Card.Meta>
-                    </Card.Description>
-                
-            </Card>
-        </Grid.Column>
-    );
-}
-const product3X3grid = (props) => {
-    let data = props["data"];
-    return (
+import { Grid, Card, Image } from "semantic-ui-react";
+
+const ProductCard = props => {
+	let data = props["data"];
+	let src = data["src"],
+		name = data["name"],
+		price = data["price"];
+	return (
+		// <Grid.Column>
+		//     <Container className='box'>
+		//         <Image src={src} className='img'/>
+		//             <div className='textName'>{name}</div>
+		//             <div className='textPrice'>{price}</div>
+		//     </Container>
+		// </Grid.Column>
+		<Grid.Column>
+			<Card className="box">
+				<Image className="img" src={src} />
+				<Card.Description>
+					<Card.Header className="textName">{name}</Card.Header>
+					<Card.Meta className="textPrice">{price}</Card.Meta>
+				</Card.Description>
+			</Card>
+		</Grid.Column>
+	);
+};
+const product3X3grid = props => {
+	let data = props["data"];
+	return (
 		<div>
-            <Grid doubling relaxed='very' columns={3}>
-                <Grid.Row>
-                <ProductCard data={data[0]}/>
-                <ProductCard data={data[1]}/>
-                <ProductCard data={data[2]}/>
-                </Grid.Row>
-                <Grid.Row>
-                <ProductCard data={data[3]}/>
-                <ProductCard data={data[4]}/>
-                <ProductCard data={data[5]}/>
-                </Grid.Row>
-                <Grid.Row>
-                <ProductCard data={data[6]}/>
-                <ProductCard data={data[7]}/>
-                <ProductCard data={data[8]}/>
-                </Grid.Row>
-            </Grid>
+			<Grid doubling relaxed="very" columns={3}>
+				<Grid.Row>
+					<ProductCard data={data[0]} />
+					<ProductCard data={data[1]} />
+					<ProductCard data={data[2]} />
+				</Grid.Row>
+				<Grid.Row>
+					<ProductCard data={data[3]} />
+					<ProductCard data={data[4]} />
+					<ProductCard data={data[5]} />
+				</Grid.Row>
+				<Grid.Row>
+					<ProductCard data={data[6]} />
+					<ProductCard data={data[7]} />
+					<ProductCard data={data[8]} />
+				</Grid.Row>
+			</Grid>
 		</div>
 	);
 };
 product3X3grid.defaultProps = {
-   "data": [
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-    {
-        "name":"Lorem Ipsum",
-        "price":"Rs 123",
-        "src":"https://i.picsum.photos/id/532/200/200.jpg"
-    },
-]
-}
+	data: [
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+		{
+			name: "Lorem Ipsum",
+			price: "Rs 123",
+			src: "https://i.picsum.photos/id/532/200/200.jpg",
+		},
+	],
+};
 // const textName={
 //     fontFamily: 'Poppins',
 //     fontStyle: 'normal',
@@ -114,7 +116,7 @@ product3X3grid.defaultProps = {
 //     letterSpacing: '-0.03em',
 //     display: 'flex',
 //     justifyContent: 'center',
-    
+
 // };
 // const box={
 //     background: '#DFEEFF',
