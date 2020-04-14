@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Menu, Icon } from "semantic-ui-react";
-import { Grid, Image, Segment } from "semantic-ui-react";
+import { Grid, Image, Segment, Container } from "semantic-ui-react";
 
 const FooterLink = ({ path, name }) => (
 	<Menu.Item
@@ -12,7 +12,7 @@ const FooterLink = ({ path, name }) => (
 		<Link href={path}>
 			<a
 				style={{
-					color: "#FFFF",
+					color: "#FFFFFF",
 				}}
 			>
 				{name}
@@ -27,7 +27,7 @@ const CustomIcon = ({ name, path }) => (
 			<Icon
 				circular
 				name={name}
-				style={{ border: "0.115rem solid", color: "white" }}
+				style={{ border: "0.108rem solid", color: "white" }}
 			/>
 		</a>
 	</Link>
@@ -43,85 +43,136 @@ const ImageIcon = ({ path }) => (
 
 const Footer = () => {
 	return (
-		<Grid
-			container
-			stackable
-			columns={3}
+		<Segment
+			inverted
+			vertical
 			style={{
-				marginTop: "5rem",
-				marginBottom: "5rem",
-				backgroundColor: "#489064",
-				borderRadius: "35px",
-				color: "#FFFF",
-				justifyContent: "center",
+                padding: "5em 0em",
+                paddingBottom:"0",
+				backgroundColor: "#046B2D",
+				borderRadius: "40px 40px 0px 0px ",
 			}}
 		>
-			<Grid.Column style={{ height: "100%" }}>
-				<Segment
-					basic
-					style={{
-						fontSize: "1.2rem",
-						paddingLeft: "5rem",
-						backgroundColor: "",
-					}}
-				>
-					<span style={{ fontWeight: "bold" }}> Address </span>
-					<span style={{ display: "block" }}>
-						123, New Colony, Delhi
-					</span>
-					<br />
-					<span style={{ fontWeight: "bold" }}>Contact</span>
-					<span style={{ display: "block" }}>
-						Email : greensum@gmail.com
-					</span>
-					<span style={{ display: "block" }}>
-						Cell : +91 - 987654321
-					</span>
-					<span style={{ display: "block" }}>Fax : greensum.io</span>
-				</Segment>
-			</Grid.Column>
-			<Grid.Column>
-				<Segment basic style={{ margin: "auto" }}>
-					<img
-						src="/footer/Footer logo.png"
-						alt="footer logo "
-						style={{
-							display: "block",
-							width: "50%",
-							marginLeft: "auto",
-							marginRight: "auto",
-						}}
-					/>
-					<Segment basic style={{ display: "flex" }}>
-						<CustomIcon name="facebook f" path="/" />
-						<CustomIcon name="instagram" path="/" />
-						<CustomIcon name="twitter" path="/" />
-						<CustomIcon name="google plus g" path="/" />
-					</Segment>
-				</Segment>
-			</Grid.Column>
-			<Grid.Column>
-				<Segment
-					basic
-					style={{
-						marginTop: "0%",
-						paddingLeft: "5rem",
-						fontSize: "1.2rem",
-					}}
-				>
-					<p style={{ fontWeight: "bold" }}>Useful links</p>
-					<FooterLink name="Privacy Policy" path="/" />
-					<FooterLink name="Terms and Conditions" path="/" />
-					<FooterLink name="Orders and Tracking" path="/" />
-					<FooterLink name="Return Policy" path="/" />
-					<FooterLink name="Customer Care" path="/" />
-					<br />
-					<ImageIcon path="/footer/Visa.png" />
-					<ImageIcon path="/footer/Mastercard.png" />
-					<ImageIcon path="/footer/Paypal.png" />
-				</Segment>
-			</Grid.Column>
-		</Grid>
+			<Container>
+				<Grid divided inverted stackable columns={3}>
+					<Grid.Row>
+						<Grid.Column>
+							<Segment
+								basic
+								style={{
+									fontSize: "1.2rem",
+									color: "#FFFFFF",
+								}}
+							>
+								<span
+									style={{
+										fontWeight: "bold",
+									}}
+								>
+									{" "}
+									Address{" "}
+								</span>
+								<span
+									style={{
+										display: "block",
+									}}
+								>
+									123, New Colony, Delhi
+								</span>
+								<br />
+								<span
+									style={{
+										fontWeight: "bold",
+									}}
+								>
+									Contact
+								</span>
+								<span
+									style={{
+										display: "block",
+									}}
+								>
+									Email : greensum@gmail.com
+								</span>
+								<span
+									style={{
+										display: "block",
+									}}
+								>
+									Cell : +91 - 987654321
+								</span>
+								<span
+									style={{
+										display: "block",
+									}}
+								>
+									Fax : greensum.io
+								</span>
+							</Segment>
+						</Grid.Column>
+						<Grid.Column>
+							<Segment basic style={{ margin: "auto" }}>
+								<img
+									src="/footer/Footer logo.png"
+									alt="footer logo "
+									style={{
+										display: "block",
+										height: "auto",
+										width: "55%",
+										marginLeft: "auto",
+										marginRight: "auto",
+									}}
+								/>
+							</Segment>
+						</Grid.Column>
+						<Grid.Column>
+							<Segment
+								basic
+								style={{
+									marginTop: "0%",
+									paddingLeft: "5rem",
+									fontSize: "1.2rem",
+								}}
+							>
+								<p
+									style={{
+										fontWeight: "bold",
+										color: "#FFFFFF",
+									}}
+								>
+									Useful links
+								</p>
+								<FooterLink name="Privacy Policy" path="/" />
+								<FooterLink
+									name="Terms and Conditions"
+									path="/"
+								/>
+								<FooterLink
+									name="Orders and Tracking"
+									path="/"
+								/>
+								<FooterLink name="Return Policy" path="/" />
+								<FooterLink name="Customer Care" path="/" />
+							</Segment>
+
+							<Segment
+								basic
+								style={{
+									display: "flex",
+									margin: "auto",
+									width: "75%",
+								}}
+							>
+								<CustomIcon name="facebook f" path="/" />
+								<CustomIcon name="instagram" path="/" />
+								<CustomIcon name="twitter" path="/" />
+								<CustomIcon name="google plus g" path="/" />
+							</Segment>
+						</Grid.Column>
+					</Grid.Row>
+				</Grid>
+			</Container>
+		</Segment>
 	);
 };
 export default Footer;
