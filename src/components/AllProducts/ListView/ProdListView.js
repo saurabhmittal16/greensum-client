@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Info = ({ name, price, text }) => (
 	<div>
-		<strong>{name}</strong>
-		<br />
+		<h2>{name}</h2>
 		<strong>&#8377; {price}/-</strong>
 		<br />
 		<br />
@@ -13,7 +12,7 @@ const Info = ({ name, price, text }) => (
 
 export default function ProdListViewCard(props) {
 	return (
-		<div>
+		<div style={parentDiv}>
 			<div style={flexContainer}>
 				<div style={imageDiv}>
 					<img src={props.image} alt="product image" style={image} />
@@ -23,10 +22,6 @@ export default function ProdListViewCard(props) {
 						name={props.name}
 						price={props.price}
 						text={props.text}
-						style={{
-							position: "relative",
-							top: "3.125rem",
-						}}
 					></Info>
 				</div>
 			</div>
@@ -34,35 +29,39 @@ export default function ProdListViewCard(props) {
 	);
 }
 
+const parentDiv = {
+	marginTop: "2rem",
+	marginBottom: "2rem",
+};
+
 const flexContainer = {
 	display: "flex",
 	flexDirection: "row",
-	minHeight: "160px",
 };
 
 const imageDiv = {
-	marginRight: "-5%",
+	float: "left",
 	zIndex: "1",
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
+	transform: `translateX(${25}%)`,
 };
 
 const image = {
 	marginTop: "auto",
 	marginBottom: "auto",
 	borderRadius: "1rem",
-	maxHeight: "150px",
+	maxHeight: "70%",
 	width: "auto",
-	border: "solid 0.1px",
 };
 
 const content = {
-	flexGrow: "3",
 	background: "#DFEEFF",
-	borderRadius: "1.5rem",
-	paddingLeft: "10%",
-	paddingTop: "0.9rem",
-	paddingBottom: "0.9rem",
-	paddingRight: "5%",
+	borderRadius: "2rem",
+	paddingLeft: "12%",
+	paddingRight: "10%",
+	display: "flex",
+	justifyContent: "center",
+	alignItems: "center",
 };
