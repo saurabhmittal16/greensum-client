@@ -3,7 +3,10 @@ import React from "react";
 const Info = ({ name, price, text }) => (
 	<div 
 		style={{
-			paddingRight:"15%"
+			paddingRight:"5%",
+			
+	marginTop:"2em",
+	marginBottom:"2em",
 		}}
 	>
 		<h2>{name}</h2>
@@ -36,17 +39,20 @@ export default function ProdListViewCard(props) {
 }
 
 const parentDiv = {
+	marginLeft:"auto",
+	marginRight:"auto",
 	marginTop: "2rem",
 	marginBottom: "2rem",
-	minWidth:"70vw"
+	maxWidth:"1000px"
 };
 
 const flexContainer = {
 	display: "flex",
 	flexDirection: "row",
+
 };
 const imageContainer = {
-	minWidth:"15.625rem",
+	minWidth:"11rem",
 	border:"green"
 	
 };
@@ -55,7 +61,7 @@ const image = {
 	marginTop: "auto",
 	marginBottom: "auto",
 	borderRadius: "1rem",
-	maxHeight:"220px",
+	maxHeight:"150px",
 	width: "auto",
 	maxWidth:"100%",
 	height:"auto",
@@ -67,8 +73,6 @@ const content = {
 	borderRadius: "2rem",
 	paddingRight: "3rem",
 	display: "flex",
-	paddingTop:"1rem",
-	paddingBottom:"1rem",
 	justifyContent: "center",
 	alignItems: "center",
 };
