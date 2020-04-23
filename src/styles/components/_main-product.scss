@@ -1,4 +1,53 @@
+.main-product {
+	font-family: $primary-font;
+}
+
 .product-header {
-  margin-top: 3rem;
+	margin-top: 3rem;
 	color: $text-color-lighter;
+}
+
+.slider-image-area {
+	display: flex;
+	justify-content: center;
+}
+
+.scroll-button {
+	width: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	border: none;
+	padding: 0 30px;
+	font-size: 22px;
+	color: lighten($text-color, 20%);
+	&:hover {
+		color: $text-color;
+	}
+}
+
+.slider-image {
+	height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		width: 350px;
+	}
+}
+
+.slider-others {
+	flex: 1;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	img {
+		height: 80px;
+		width: auto;
+		margin-left: 20px;
+	}
 }
