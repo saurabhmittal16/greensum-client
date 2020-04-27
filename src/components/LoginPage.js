@@ -16,7 +16,12 @@ export default class Login_page extends React.Component {
 				</div>
 				<div className="login-page__form">
 					<h2 className="form__header">Welcome Back :D</h2>
-					<Form className="form-layout">
+					<Form
+						className="form-layout"
+						style={{
+							margin: "0px",
+						}}
+					>
 						<div>
 							<Form.Field>
 								<label className="form__label">
