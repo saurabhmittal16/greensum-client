@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import ProductListView from "../components/AllProducts/ListView";
 
-
 const Playground = () => {
 	return (
 		<Layout>
