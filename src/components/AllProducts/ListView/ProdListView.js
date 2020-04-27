@@ -43,21 +43,21 @@ const parentDiv = {
 	marginRight: "auto",
 	marginTop: "2rem",
 	marginBottom: "2rem",
-	maxWidth: "1000px",
+
 };
 
 const flexContainer = {
 	display: "flex",
 	flexDirection: "row",
+
 };
 const imageContainer = {
-	
 	marginRight:"2rem",
 	transform: `translateX(${50}%)`,
-	minWidth: "20rem",
+	minWidth: "18rem",
 	marginTop: "2em",
 	marginBottom: "2em",
-	textAlign:"center"
+	textAlign:"right",
 };
 
 const image = {
@@ -74,4 +74,5 @@ const content = {
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
+
 };
