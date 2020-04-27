@@ -1,0 +1,144 @@
+// Main Page Component ---------------------------------------------------------------->
+.product-details {
+	margin-top: $large-space;
+}
+.product-details__nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	li {
+		list-style-type: none;
+		font-size: 18px;
+		text-align: center;
+		padding: 0 20px;
+		cursor: pointer;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.product-details__wrapper {
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.wrapper-content {
+	padding: 50px 30px;
+	background-color: #fff;
+	box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1);
+	border-radius: 20px;
+	font-size: 16px;
+}
+
+.active {
+	color: $primary-color;
+}
+
+// Additional-Info Page ---------------------------------------------------------------->
+
+.additional-info {
+	display: flex;
+	align-items: center;
+}
+
+.left-bar-info {
+	flex: 1;
+}
+
+.fun-facts {
+	flex: 1;
+}
+
+.facts {
+	align-self: center;
+	margin-left: 80px;
+}
+
+.facts-header {
+	font-weight: bolder;
+}
+
+.fact {
+	min-height: 100px;
+}
+
+.nutrient-info {
+	margin-top: 40px;
+}
+
+.nutrient-info-part {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	div {
+		flex: 1;
+	}
+}
+
+.heading-Ni {
+	p {
+		font-weight: normal;
+		font-size: 16px;
+		font-family: $primary-color;
+	}
+}
+
+// Review Page ---------------------------------------------------------------->
+.comment {
+	display: flex;
+	margin-top: 80px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+	.avatar {
+		img {
+			width: 150px;
+			border-radius: 50%;
+		}
+	}
+	.content {
+		margin-left: 40px;
+	}
+	.author {
+		font-weight: bolder;
+		font-size: 20px;
+	}
+	.metadata {
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	.text {
+		margin-top: 40px;
+		font-size: 16px;
+		color: $text-color-lighter;
+	}
+}
+
+.rating-box {
+	margin-top: 40px;
+	display: flex;
+	align-items: flex-start;
+	p {
+		margin-right: 20px;
+	}
+}
+
+.review-head {
+	margin-top: 40px;
+}
+
+.comment-form {
+	margin-top: 40px;
+}
+
+.comment-submit {
+	background-color: $primary-color;
+	margin-top: 30px;
+	border: none;
+	font-family: "Poppins";
+	color: #fff;
+	padding: 10px 40px;
+	border-radius: 2px;
+}
