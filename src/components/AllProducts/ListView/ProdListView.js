@@ -19,14 +19,14 @@ export default function ProdListViewCard(props) {
 	return (
 		<div style={parentDiv}>
 			<div style={flexContainer}>
-				<div style={content}>
-					<div style={imageContainer}>
+			<div style={imageContainer}>
 						<img
 							src={props.image}
 							alt="product image"
 							style={image}
 						/>
 					</div>
+				<div style={content}>
 					<Info
 						name={props.name}
 						price={props.price}
@@ -51,24 +51,26 @@ const flexContainer = {
 	flexDirection: "row",
 };
 const imageContainer = {
-	minWidth: "12rem",
+	
+	marginRight:"2rem",
+	transform: `translateX(${50}%)`,
+	minWidth: "20rem",
 	marginTop: "2em",
 	marginBottom: "2em",
-	marginRight:"2rem"
+	textAlign:"center"
 };
 
 const image = {
-	marginTop: "auto",
-	marginBottom: "auto",
 	borderRadius: "1rem",
+	height:"auto",
 	maxHeight: "300px",
-	transform: `translateX(${-50}%)`,
 };
 
 const content = {
 	background: "#DFEEFF",
 	borderRadius: "2rem",
 	paddingRight: "3rem",
+	paddingLeft: "15rem",
 	display: "flex",
 	justifyContent: "center",
 	alignItems: "center",
