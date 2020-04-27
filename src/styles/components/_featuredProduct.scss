@@ -1,0 +1,73 @@
+.FeaturesProduct_Heading {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 35px !important;
+	margin-bottom: 60px !important;
+}
+
+.featuredCard_Row {
+	padding-left: 2em !important;
+	padding-right: 2em !important ;
+}
+.featuredCard_Column {
+	border: none !important;
+	box-shadow: none !important;
+}
+.featuredCard_Card {
+	box-shadow: none !important;
+	padding: 0px;
+	width: 100% !important;
+}
+
+i.icon.outline {
+	font-size: 1.5rem !important;
+}
+
+.ui.card > :first-child {
+	border: none !important;
+	border-radius: 20px !important;
+}
+
+.FeatureHorizontalCard_Content {
+	padding-top: 6rem !important;
+	padding-bottom: 6rem !important;
+}
+
+.FeatureHorizontalCard_Item {
+	border-radius: 20px !important;
+	box-shadow: 18px 19px 14px 12px rgba(34, 36, 38, 0.15) !important;
+}
+
+.ui.items > .item > .image > img {
+	border-radius: 20px !important;
+}
+
+.FeaturedServices_Card {
+	margin: 25px !important;
+	padding: 15px !important;
+	border-radius: 20px !important;
+	border: none !important;
+}
+
+.ui.card > .content > .header:not(.ui),
+.ui.cards > .card > .content > .header:not(.ui) {
+	font-size: 2rem !important;
+}
+
+@media (max-width: 765px) {
+	.FeatureHorizontal_Group {
+		padding: 0 !important;
+	}
+	.FeatureHorizontalCard_Content {
+		text-align: center;
+		padding-left: 10px !important;
+	}
+}
+@media (min-width: 766px) {
+	.FeatureHorizontal_Group {
+		padding: 5rem !important;
+	}
+	.FeatureHorizontalCard_Content {
+		padding-left: 6rem !important;
+	}
+}
