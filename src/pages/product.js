@@ -39,24 +39,18 @@ const additionalInfo = {
 
 const comments = [
 	{
-		avatar:
-			"https://8682e824f6b7ffdb9ea0-e38cd3b884efbc2f850474b7fe806c09.ssl.cf3.rackcdn.com/4825_book_2059_77bb632c-563d-465c-ac99-b31a186c7dc6.jpg",
 		author: "John Doe",
 		date: "27 April 2019",
 		text:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque libero eget pulvinar vestibulum. Nulla egestas pellentesque molestie. Fusce neque turpis ",
 	},
 	{
-		avatar:
-			"https://8682e824f6b7ffdb9ea0-e38cd3b884efbc2f850474b7fe806c09.ssl.cf3.rackcdn.com/4825_book_2059_77bb632c-563d-465c-ac99-b31a186c7dc6.jpg",
 		author: "John Doe",
 		date: "27 April 2019",
 		text:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque libero eget pulvinar vestibulum. Nulla egestas pellentesque molestie. Fusce neque turpis ",
 	},
 	{
-		avatar:
-			"https://8682e824f6b7ffdb9ea0-e38cd3b884efbc2f850474b7fe806c09.ssl.cf3.rackcdn.com/4825_book_2059_77bb632c-563d-465c-ac99-b31a186c7dc6.jpg",
 		author: "John Doe",
 		date: "27 April 2019",
 		text:

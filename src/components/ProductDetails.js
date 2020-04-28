@@ -1,67 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Progress, Comment, Form, Rating } from "semantic-ui-react";
 
-// Sample Props :
-
-const description =
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque libero eget pulvinar vestibulum. Nulla egestas pellentesque molestie. Fusce neque turpis, porttitor id metus et, efficitur viverra ligula. Donec fringilla eget purus ut placerat. Nam pharetra mauris non ornare semper.";
-
-const additionalInfo = {
-	weight: "100",
-	dimensions: [200, 400, 200],
-	title: "Cheese per 100gm",
-	nutrition: [
-		{
-			name: "Protein",
-			percent: 15,
-		},
-		{
-			name: "Calories",
-			percent: 36,
-		},
-		{
-			name: "Fat",
-			percent: 15,
-		},
-		{
-			name: "Carbohydrate",
-			percent: 44,
-		},
-	],
-	facts: [
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque libero eget pulvinar vestibulum. Nulla egestas pellentesque molestie. Fusce neque turpis.",
-		"I am Manan",
-		"Jaaammmmmeeeee",
-	],
-};
-
-const comments = [
-	{
-		avatar:
-			"https://8682e824f6b7ffdb9ea0-e38cd3b884efbc2f850474b7fe806c09.ssl.cf3.rackcdn.com/4825_book_2059_77bb632c-563d-465c-ac99-b31a186c7dc6.jpg",
-		author: "John Doe",
-		date: "27 April 2019",
-		text:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque libero eget pulvinar vestibulum. Nulla egestas pellentesque molestie. Fusce neque turpis ",
-	},
-	{
-		avatar:
-			"https://8682e824f6b7ffdb9ea0-e38cd3b884efbc2f850474b7fe806c09.ssl.cf3.rackcdn.com/4825_book_2059_77bb632c-563d-465c-ac99-b31a186c7dc6.jpg",
-		author: "John Doe",
-		date: "27 April 2019",
-		text:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque libero eget pulvinar vestibulum. Nulla egestas pellentesque molestie. Fusce neque turpis ",
-	},
-	{
-		avatar:
-			"https://8682e824f6b7ffdb9ea0-e38cd3b884efbc2f850474b7fe806c09.ssl.cf3.rackcdn.com/4825_book_2059_77bb632c-563d-465c-ac99-b31a186c7dc6.jpg",
-		author: "John Doe",
-		date: "27 April 2019",
-		text:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque libero eget pulvinar vestibulum. Nulla egestas pellentesque molestie. Fusce neque turpis ",
-	},
-];
-
 const Description = ({ description }) => {
 	return <p>{description}</p>;
 };
@@ -135,18 +74,16 @@ const Reviews = ({ comments }) => {
 		<div className="comments">
 			{comments.map((comment) => (
 				<Comment>
-					<Comment.Avatar src={comment.avatar} />
-					<Comment.Content>
-						<Comment.Author>{comment.author}</Comment.Author>
-						<Comment.Metadata>
-							<div>{comment.date}</div>
-						</Comment.Metadata>
-						<Comment.Text>
-							<p>{comment.text}</p>
-						</Comment.Text>
-					</Comment.Content>
+					<Comment.Author>{comment.author}</Comment.Author>
+					<Comment.Metadata>
+						<div>{comment.date}</div>
+					</Comment.Metadata>
+					<Comment.Text>
+						<p>{comment.text}</p>
+					</Comment.Text>
 				</Comment>
 			))}
+
 			<div className="comment-form">
 				<p>Add a review</p>
 				<div class="rating-box">

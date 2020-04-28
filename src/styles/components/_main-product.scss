@@ -17,13 +17,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #fff;
+	background: transparent;
 	border: none;
 	padding: 0 30px;
 	font-size: 22px;
 	color: lighten($text-color, 20%);
 	&:hover {
 		color: $text-color;
+	}
+	&:focus {
+		outline: 0;
 	}
 }
 
