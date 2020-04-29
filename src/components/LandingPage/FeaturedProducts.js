@@ -9,76 +9,72 @@ class Product extends React.Component {
 		};
 	}
 	like = () => {
-		this.setState({ liked: !this.state.liked });
+		this.setState((state) => ({ liked: !state.liked }));
 	};
 	render() {
 		return (
 			<div>
-				<div
-					style={{
-						display: "flex",
-					}}
-				>
+				<div className="prod-container">
 					<Icon
 						name={this.state.liked ? "heart" : "heart outline"}
 						color="red"
 						style={{ display: "inline", cursor: "pointer" }}
 						onClick={this.like}
 					/>
-					<img
-						style={{
-							width: "100%",
-							display: "inline",
-						}}
-						src="/test-images/featprod.png"
-					/>
+					<img className="prod-img" src={this.props.src} />
 				</div>
-				<div
-					style={{
-						float: "left",
-						margin: "0.7rem 1.5rem",
-						marginBottom: "0",
-						textAlign: "left",
-					}}
-				>
-					<span> Lorem ipsum</span>
+				<div className="prod-info">
+					<span> {this.props.name}</span>
 					<br />
-					<strong> &#8377; 169/-</strong>
+					<strong> &#8377; {this.props.cost}/-</strong>
 				</div>
 			</div>
 		);
 	}
 }
 
-export default function FeaturedProducts() {
+export default function FeaturedProducts(props) {
+	const data = props.data;
 	return (
-		<Segment
-			basic
-			style={{
-				width: "70%",
-				margin: "7em auto",
-				textAlign: "center",
-			}}
-		>
+		<Segment basic className="feat-prod-container">
 			<h2>Featured Products</h2>
-			<Grid columns={2}>
-				<Grid.Row>
+			<Grid stackable columns={2}>
+				{data.map((item) => (
 					<Grid.Column>
-						<Product />
+						<Product
+							src={item.src}
+							name={item.name}
+							cost={item.cost}
+						/>
 					</Grid.Column>
-					<Grid.Column>
-						<Product />
-					</Grid.Column>
-				</Grid.Row>
-				<Grid.Row>
-					<Grid.Column>
-						<Product />
-					</Grid.Column>
-					<Grid.Column>
-						<Product />
-					</Grid.Column>
-				</Grid.Row>
+				))}
+				;
 			</Grid>
 		</Segment>
 	);
 }
+
+FeaturedProducts.defaultProps = {
+	data: [
+		{
+			src: "/test-images/featprod.png",
+			name: "Lorem Ipsum",
+			cost: "100",
+		},
+		{
+			src: "/test-images/featprod.png",
+			name: "Lorem Ipum",
+			cost: "100",
+		},
+		{
+			src: "/test-images/featprod.png",
+			name: "Lorem Ipum",
+			cost: "100",
+		},
+		{
+			src: "/test-images/featprod.png",
+			name: "Lorem Ipum",
+			cost: "100",
+		},
+	],
+};
