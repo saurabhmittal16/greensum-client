@@ -34,7 +34,7 @@ export const HorizontalCard = () => {
 					<Item.Meta>
 						<span className="price">Card > Yogurt</span>
 					</Item.Meta>
-					<Item.Header>This Month's Deal is Hottest Deal</Item.Header>
+					<Item.Header>This Month's Hottest Deal</Item.Header>
 
 					<Item.Description>
 						<Button
@@ -49,12 +49,22 @@ export const HorizontalCard = () => {
 						</Button>
 					</Item.Description>
 				</Item.Content>
-				<Item.Image
-					size="large"
-					src="https://images.pexels.com/photos/433539/pexels-photo-433539.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-					style={{ maxWidth: "50%" }}
-				/>
+				<Item.Image size="large" src="" />
 			</Item>
 		</Item.Group>
 	);
 };
+
+{
+	/* <div className="FeatureHorizontal_Div">
+	<div className="FeatureHorizontal_Meta">Card > Yogurt</div>
+	<div className="FeatureHorizontal_Description">
+		This Month's Hottest Deal
+			</div>
+	<Button className="FeatureHorizontal_Button">Grab It</Button>
+	<div className="FeatureHorizontal_Image_Blue">
+		<div className="FeatureHorizontal_Image_Inner"></div>
+	</div>
+
+</div> */
+}

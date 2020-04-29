@@ -10,6 +10,7 @@ export default class Services extends Component {
 			description:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			color: "#FFFBC8",
+			icon: "truck",
 		},
 		{
 			header: "Lorem Ipsum Dolor Sit Amet",
@@ -17,6 +18,7 @@ export default class Services extends Component {
 			description:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			color: "#EDFCF9",
+			icon: "clock outline",
 		},
 		{
 			header: "Lorem Ipsum Dolor Sit Amet",
@@ -24,20 +26,26 @@ export default class Services extends Component {
 			description:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			color: "#DFF9D9",
+			icon: "file text",
 		},
 	];
 	render() {
 		return (
-			<Card.Group centered style={{ marginBottom: "50px" }}>
+			<div
+				className="FeatureServicesCardGroup"
+				centered
+				style={{ marginBottom: "50px" }}
+			>
 				{this.contents.map((content, i) => (
 					<CardServices
 						header={content.header}
 						description={content.description}
 						color={content.color}
+						icon={content.icon}
 						key={i}
 					/>
 				))}
-			</Card.Group>
+			</div>
 		);
 	}
 }
