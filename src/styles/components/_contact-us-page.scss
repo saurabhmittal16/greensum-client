@@ -8,7 +8,7 @@
 	padding: $medium-space;
 	overflow: auto;
 	z-index: 999;
-	min-width: 700px;
+	min-width: 850px;
 }
 
 .form-header {
@@ -24,15 +24,17 @@
 	width: 45%;
 	position: relative;
 	float: left;
+	min-width: 450px;
 }
 
 .contact-us__info {
-	width: 45%;
-	position: relative;
+	width: 40%;
 	float: right;
-	margin: 2.5%;
 	padding: 3%;
 	text-align: center left;
+	min-width: 250px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .form-input {
