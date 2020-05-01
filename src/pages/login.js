@@ -4,7 +4,7 @@ import Login from "../components/LoginPage";
 
 const Playground = () => {
 	return (
-		<Layout>
+		<Layout heading="Login" >
 			<Login />
 		</Layout>
 	);

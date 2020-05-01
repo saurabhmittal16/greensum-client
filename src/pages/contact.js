@@ -4,7 +4,7 @@ import Contact_Us from "../components/ContactUs";
 
 const Contact = () => {
 	return (
-		<Layout>
+		<Layout heading="Get In Touch" subHeading="home/ contact" >
 			<Contact_Us />
 		</Layout>
 	);

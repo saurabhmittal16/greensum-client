@@ -4,7 +4,10 @@ import ProductListView from "../components/AllProducts/ListView";
 
 const Shop = () => {
 	return (
-		<Layout>
+		<Layout
+			heading="Our Store"
+			subHeading="home/ shop"
+		>
 			<ProductListView
 				data = {[
 					{image: "/test-images/productImg.png", name: "Lorem Ipsum", price: "169", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet erat nec lorem auctor fermentum nec sit amet ipsum. Etiam tempus id mauris quis interdum. Ut vestibulum posuere bibendum."},

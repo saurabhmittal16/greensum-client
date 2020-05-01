@@ -60,7 +60,10 @@ const comments = [
 
 const Product = () => {
 	return (
-		<Layout>
+		<Layout
+			heading="Our Store"
+			subHeading="home/ shop"
+		>
 			<MainProduct />
 			<ProductDetails
 				comments={comments}
