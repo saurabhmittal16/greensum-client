@@ -8,11 +8,12 @@ body {
 
 .path {
 	float: left;
+	font-size: 15px;
 	min-width: 200px;
 }
 
 .top {
-	min-width: 700px;
+	min-width: 750px;
 }
 
 .navigation {
@@ -20,6 +21,7 @@ body {
 	padding: 3% 2%;
 	display: inline-block;
 	min-width: 500px;
+	vertical-align: middle;
 }
 
 .search-bar {
@@ -66,7 +68,7 @@ h1 {
 .details {
 	text-align: center;
 	font-size: 17px;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 
 .calories,
@@ -80,8 +82,11 @@ h1 {
 	float: left;
 	align-items: center;
 	width: 5%;
-	margin-left: 8%;
+	margin-left: 14%;
+	padding-left: 1px;
+	overflow: hidden;
 	z-index: -1;
+	min-width: 45px;
 }
 
 .recipie-page {
@@ -91,7 +96,7 @@ h1 {
 }
 
 .recipie-part {
-	min-width: 800px;
+	min-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 1080px;
@@ -105,7 +110,7 @@ h1 {
 	padding: 5%;
 	overflow: auto;
 	z-index: 0;
-	min-width: 500px;
+	min-width: 450px;
 }
 .recipie-image {
 	margin-left: -75px;
@@ -156,7 +161,7 @@ h2 {
 }
 
 .page-change {
-	margin: 5% 15%;
+	margin: 5% 17.5%;
 	text-align: center;
 	padding: 30px;
 	display: inline-block;
@@ -165,5 +170,5 @@ h2 {
 .prev,
 .next {
 	display: inline;
-	margin: 50px 50px;
+	margin: 50px 60px;
 }

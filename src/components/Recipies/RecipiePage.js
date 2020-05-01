@@ -15,19 +15,15 @@ const RecipiePage = (props) => {
 
 	useEffect(scrollToMid, []);
 	const bat = fav ? (
-		<i class="heart icon"></i>
+		<i className="heart icon"></i>
 	) : (
-		<i class="heart outline icon"></i>
+		<i className="heart outline icon"></i>
 	);
 
 	const val = props.steps.map((step) => {
 		return (
-			<div className="recipie-steps">
-				<RecipieStep
-					key={step.step_num}
-					id={step.step_num}
-					step_info={step.step_content}
-				/>
+			<div className="recipie-steps" key={"step_" + step.step_num}>
+				<RecipieStep id={step.step_num} step_info={step.step_content} />
 			</div>
 		);
 	});
@@ -53,11 +49,11 @@ const RecipiePage = (props) => {
 				</div>
 				<div className="details">
 					<div className="time-taken">
-						<i class="clock outline icon"></i>
+						<i className="clock outline icon"></i>
 						{props.cook_time} minutes
 					</div>
 					<div className="calories">
-						<i class="utensils icon"></i>
+						<i className="utensils icon"></i>
 						{props.calories} calories
 					</div>
 				</div>
@@ -66,7 +62,6 @@ const RecipiePage = (props) => {
 				<Button
 					onClick={() => {
 						fav === false ? setFav(true) : setFav(false);
-						console.log("Fav set to:", fav);
 					}}
 				>
 					{bat}
@@ -93,17 +88,19 @@ const RecipiePage = (props) => {
 						onClick={() => Router.push(`/recipies/${props.id - 1}`)}
 						disabled={props.id < 2}
 					>
-						<i class="angle left icon"></i>
+						<i className="angle left icon"></i>
 						PREV
 					</Button>
 				</div>
 				<div className="next">
 					<Button
-						className="next"
-						onClick={() => Router.push(`/recipies/${props.id + 1}`)}
+						onClick={() =>
+							Router.push(`/recipies/${parseInt(props.id) + 1}`)
+						}
+						disabled={parseInt(props.id) === props.max_id}
 					>
 						NEXT
-						<i class="angle right icon"></i>
+						<i className="angle right icon"></i>
 					</Button>
 				</div>
 			</div>
