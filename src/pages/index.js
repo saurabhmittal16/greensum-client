@@ -1,12 +1,24 @@
 import React from "react";
-import Layout from "../components/Layout";
+import NavBar from "../components/Header/NavBar";
+import Banner from "../components/LandingPage/Banner";
+import Search from "../components/LandingPage/Search";
+import Featured from "../components/LandingPage/FeaturedProducts";
+import LowerHalf from "../components/FeaturedProduct";
+import Footer from "../components/Footer";
 // import { connect } from "react-redux";
 
 const Home = () => {
 	return (
-		<Layout>
-			<h1>Hello World</h1>
-		</Layout>
+		<React.Fragment>
+			<NavBar />
+			<div className='container main'>
+				<Banner />
+				<Search />
+				<Featured />
+				<LowerHalf />
+			</div>
+			<Footer />
+		</React.Fragment>
 	);
 };
 

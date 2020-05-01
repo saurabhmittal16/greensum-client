@@ -37,7 +37,7 @@ export default function FeaturedProducts(props) {
 	const data = props.data;
 	return (
 		<Segment basic className="feat-prod-container">
-			<h2>Featured Products</h2>
+			<div style={{ fontSize: 40, marginBottom: 40 }} >Featured Products</div>
 			<Grid stackable columns={2}>
 				{data.map((item) => (
 					<Grid.Column>

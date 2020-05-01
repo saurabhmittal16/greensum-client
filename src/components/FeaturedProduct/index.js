@@ -8,7 +8,7 @@ export default class index extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div className="FeaturesProduct_Heading">Featured Products</div>
+				{/* <div className="FeaturesProduct_Heading">Featured Products</div> */}
 				<HorizontalCard />
 				<div className="FeaturesProduct_Heading">Our Services</div>
 				<Services />
