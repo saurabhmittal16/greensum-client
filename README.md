@@ -25,7 +25,8 @@ Semantic UI
 ## Bugs -
 
 - [x] Fix footer for login and signup page
-- [ ] Make large banner dynamic (should display login for /login)
+- [x] Make large banner dynamic (should display login for /login)
+- [ ] Fetch recipe data from static code
+- [ ] Centralise recipe page
 - [ ] Make header and footer reactive
 - [ ] Update header and footer to use global
-- [ ] Fetch recipe data from static code
