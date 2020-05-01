@@ -17,11 +17,11 @@ export default function Banner() {
 						<img src="./landing-page/ecoFriendly.png" />
 					</Grid.Column>
 					<Grid.Column style={{ paddingLeft: "14em" }}>
-						<div>
-							<h1 className="heading">
+						<div className="banner">
+							<h1 className="banner__heading">
 								Be <br /> Wholesome.
 							</h1>
-							<p className="banner-info">
+							<p className="banner__banner-info">
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit, sed do eiusmod tempor
 								incididunt....

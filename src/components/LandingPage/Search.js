@@ -14,7 +14,7 @@ export default function Banner() {
 						<div style={{ fontSize: "3em", marginBottom: "1em" }}>
 							in Every Category
 						</div>
-						<Search fluid icon="none" placeholder="Search Here" />
+						<Search fluid placeholder="Search Here" />
 					</Grid.Column>
 					<Grid.Column width={4} style={{ padding: 0 }}>
 						<img src="./landing-page/yogurt.png" style={img} />

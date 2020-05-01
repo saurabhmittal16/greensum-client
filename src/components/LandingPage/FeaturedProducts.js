@@ -39,8 +39,8 @@ export default function FeaturedProducts(props) {
 		<Segment basic className="feat-prod-container">
 			<div style={{ fontSize: 40, marginBottom: 40 }} >Featured Products</div>
 			<Grid stackable columns={2}>
-				{data.map((item) => (
-					<Grid.Column>
+				{data.map((item, index) => (
+					<Grid.Column key={`featured_${index}`} >
 						<Product
 							src={item.src}
 							name={item.name}

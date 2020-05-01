@@ -33,7 +33,6 @@ export default class Services extends Component {
 		return (
 			<div
 				className="FeatureServicesCardGroup"
-				centered
 				style={{ marginBottom: "50px" }}
 			>
 				{this.contents.map((content, i) => (
