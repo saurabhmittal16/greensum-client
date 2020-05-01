@@ -1,0 +1,274 @@
+.FeaturesProduct_Heading {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 35px !important;
+	margin-bottom: 60px !important;
+}
+
+.ui.container.fluidContainer {
+	height: 192px !important;
+	background: #489064 !important;
+	width: 100vw;
+	position: relative !important;
+	left: 50% !important;
+	margin-left: -50vw !important;
+	max-width: 100vw !important;
+	padding-left: 0px !important;
+	display: grid !important;
+	align-content: space-around !important;
+}
+
+.NotMissBar {
+	font-family: Poppins !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 40px !important;
+	line-height: 128% !important;
+	margin-right: 13rem !important;
+	margin-left: 13rem !important;
+	/* or 70px */
+	display: flex !important;
+	justify-content: space-between !important;
+	text-transform: capitalize !important;
+
+	color: #ffffff !important;
+}
+
+.NeverMissEmail {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	padding-left: 40px !important;
+	color: #489064;
+	line-height: 30px;
+	width: 350.23px !important;
+	height: 51.91px !important;
+	border: 40.5px !important;
+	margin-right: 20px !important;
+	border-radius: 40.5px !important;
+	background: #ffffff !important;
+}
+
+.bellIcon {
+	text-align: center !important;
+	border-radius: 50% !important;
+	color: #facf37;
+	background: #ffffff !important;
+	width: 52px !important;
+	height: 52px !important;
+}
+
+.FeatureHorizontalCard_Group {
+	position: relative;
+}
+
+.FeatureHorizontalCard_Item {
+	position: relative;
+	height: 657px;
+	background: #ffffff !important;
+	box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1) !important;
+	border-radius: 24px 0px 24px 24px !important;
+}
+
+.FeatureHorizontalCard_Content {
+	// padding-top: 6rem !important;
+	// padding-bottom: 6rem !important;
+	position: absolute !important;
+	top: 172px !important;
+	left: 2% !important;
+	width: 45% !important;
+	height: 500px !important;
+	background: #ffffff;
+	box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1);
+	border-radius: 24px 0px 24px 24px;
+}
+
+.FeatureHorizontalCard_Content .meta {
+	position: absolute !important;
+	width: 156px !important;
+	height: 25px !important;
+
+	font-family: Poppins !important;
+	font-style: normal !important;
+	font-weight: 300 !important;
+	font-size: 22px !important;
+	line-height: 156.5% !important;
+}
+
+.FeatureHorizontalCard_Content .header {
+	position: absolute !important;
+	width: 80% !important;
+	height: !important;
+	//left: 61px;
+	top: 60px;
+
+	font-family: Poppins !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 55px !important;
+	line-height: 67px !important;
+	text-transform: capitalize !important;
+
+	color: #333333 !important;
+}
+
+.FeatureHorizontalCard_Content .description button {
+	position: absolute;
+	width: 178px;
+	height: 40px;
+	top: 284px;
+	color: #ffffff !important;
+	background: #046b2d !important;
+	border: 1px solid #046b2d !important;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 25px rgba(4, 107, 45, 0.2);
+	border-radius: 4px;
+}
+
+.FeatureHorizontalCard_Item .image {
+	margin: 0;
+	position: absolute;
+	top: 0%;
+	right: -50%;
+	background: #dfeeff;
+	border-radius: 0px 24px 24px 0px;
+	height: 657px;
+	width: 50% !important;
+}
+
+.FeaturedServices_Card {
+	position: relative;
+	width: 25% !important;
+	height: 254px !important;
+	// padding: 15px !important;
+	border-radius: 20px !important;
+	border: none !important;
+
+	box-shadow: none !important;
+}
+
+.FeatureServicesCardGroup {
+	display: flex !important;
+	justify-content: space-around !important;
+}
+
+.FeaturedServices_Card .content {
+	border: none !important;
+}
+
+.FeaturedServices_Card .content .header {
+	position: relative !important;
+	width: 85% !important;
+	top: 3% !important;
+	left: 8% !important;
+	font-family: Poppins !important;
+	font-style: normal !important;
+	font-weight: 500 !important;
+	font-size: 30px !important;
+	line-height: 121.5% !important;
+
+	/* or 36px */
+	text-transform: capitalize !important;
+
+	color: #333333 !important;
+}
+
+.FeaturedServices_Card .content .description {
+	position: relative !important;
+	width: 85% !important;
+	top: 3% !important;
+	left: 8% !important;
+}
+
+.ServiceIcon {
+	width: 84px;
+	height: 84px;
+	margin-top: -45px;
+	margin-left: -45px;
+	background: #ffffff;
+	box-shadow: 4px 4px 10px rgba(55, 84, 170, 0.2);
+	padding: 30px 26px !important;
+	text-emphasis: center !important;
+	font-size: 29px !important;
+}
+
+.chooseUs .First {
+	margin-top: 80px !important;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 60px;
+	text-align: center !important;
+	/* identical to box height */
+	text-transform: capitalize;
+	width: 100% !important;
+
+	color: #333333;
+}
+
+.ChooseUsCardGroup {
+	display: flex !important;
+	justify-content: space-around !important;
+	margin: 60px auto 80px auto !important;
+}
+
+.ChooseUsCardGroup .card {
+	display: flex !important;
+	justify-content: center !important;
+	width: 28% !important;
+	text-align: center !important;
+	flex-direction: row !important;
+	box-shadow: none !important;
+}
+
+.quoteIcon {
+	width: 7% !important;
+	height: 100% !important;
+}
+
+.ChooseUsCardGroup .card .content {
+	font-family: Poppins !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 16px !important;
+	line-height: 24px !important;
+	letter-spacing: 0.025em !important;
+
+	color: #333333;
+	text-align: left !important;
+	width: 93% !important;
+	border: none !important;
+}
+
+.ChooseUsCardGroup .card .content .header {
+	margin-top: 25px !important;
+	float: right !important;
+	font-family: Poppins !important;
+	font-style: normal !important;
+	font-weight: 600 !important;
+	font-size: 16px !important;
+	line-height: 24px !important;
+	letter-spacing: 0.17em !important;
+
+	color: #000000 !important;
+}
+
+@media (max-width: 765px) {
+	.FeatureHorizontal_Group {
+		padding: 0 !important;
+	}
+	.FeatureHorizontalCard_Content {
+		text-align: center;
+		padding-left: 10px !important;
+	}
+}
+@media (min-width: 766px) {
+	.FeatureHorizontal_Group {
+		padding: 5rem !important;
+	}
+	.FeatureHorizontalCard_Content {
+		padding-left: 6rem !important;
+	}
+}

@@ -1,0 +1,136 @@
+.checkoutDiv,
+.checkoutButton {
+	width: 100% !important;
+	display: flex !important;
+	justify-content: space-between !important;
+}
+
+.checkoutForm {
+	width: 630px !important;
+}
+
+.checkoutInfo {
+	font-family: Poppins !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-size: 22px !important;
+	line-height: 33px !important;
+	color: #000000 !important;
+	margin-top: 24px !important;
+	margin-bottom: 24px !important;
+}
+
+.checkoutForm input {
+	height: 60px !important;
+	background: #e4e4e4 !important;
+	opacity: 0.63 !important;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	color: #489064;
+	opacity: 0.5;
+	border-radius: 16px !important;
+	border: none !important;
+	padding: 18px !important;
+	margin-bottom: 29px !important;
+}
+
+.insideForm1 input {
+	width: 488px !important;
+}
+
+.insideForm2 input {
+	width: 630px !important;
+}
+
+.insideForm2 .name,
+.insideForm2 .address {
+	display: flex;
+	justify-content: space-between !important;
+}
+
+.insideForm2 .name input {
+	width: 46.5% !important;
+}
+
+.insideForm2 .address input {
+	width: 30.5% !important;
+}
+
+.checkoutPayment {
+	width: 330px !important;
+	float: right !important;
+	text-align: right !important;
+}
+
+.insideMethod {
+	display: flex;
+	justify-content: space-between;
+	width: 328px;
+	height: 92px;
+	border: 1.4px solid #c3c3c3;
+	box-sizing: border-box;
+	border-radius: 16px;
+	margin-bottom: 32px !important;
+	text-align: left !important;
+}
+
+.insideMethod:hover,
+.insideMethod:active {
+	border: 2px solid #b5d653 !important;
+}
+
+.checkoutPaymentMethods .Image {
+	margin: 28px auto 37px 27px;
+	width: 71px;
+	height: 45.34px;
+}
+
+.checkoutPaymentMethods .icon i {
+	font-size: 45.3px;
+	margin: 33px auto 37px 40px;
+}
+
+.checkoutPaymentMethods .typeof {
+	text-align: center !important;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 28px 40px 31px auto;
+	color: #000000;
+}
+
+.checkoutButton {
+	justify-content: center !important;
+	margin: 72px auto 168px auto !important;
+}
+
+.checkoutButton button {
+	width: 296px;
+	height: 77px;
+	background: #000000;
+	border-radius: 24px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 33px;
+	color: #ffffff !important;
+	margin: auto 53px !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.shortLine {
+	width: 152px;
+	height: 0px;
+	border: 0.8px solid #c3c3c3;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+}
