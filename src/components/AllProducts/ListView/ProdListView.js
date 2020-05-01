@@ -17,11 +17,7 @@ export default function ProdListViewCard(props) {
 		<div className="parentDiv">
 			<div className="flexContainer">
 				<div className="imageContainer">
-					<img
-						className="image"
-						src={props.image}
-						alt="product image"
-					/>
+					<img src={props.image} alt="product image" />
 				</div>
 				<div className="content">
 					<Info
