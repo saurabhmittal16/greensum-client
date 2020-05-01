@@ -267,7 +267,7 @@ const ImageSlider = ({ images }) => {
 	let index = 0;
 
 	const [currentIndex, setCurrentIndex] = useState(0);
-	console.log(images[currentIndex]);
+	// console.log(images[currentIndex]);
 
 	const slideLeft = () => {
 		if (!currentIndex) {
@@ -309,6 +309,7 @@ const ImageSlider = ({ images }) => {
 			<div className="slider-others">
 				{images.map((image, index) => (
 					<img
+						id={`image_${index}`}
 						src={image}
 						onClick={() => handleImageSelection(index)}
 					/>

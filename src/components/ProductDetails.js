@@ -54,8 +54,8 @@ const AdditionalInfo = ({ weight, dimensions, title, nutrition, facts }) => {
 				<p>{title}</p>
 				<div className="nutrient-info">
 					<ul>
-						{nutrition.map((value) => (
-							<li>
+						{nutrition.map((value, index) => (
+							<li id={`nutrition_${index}`}>
 								<NutrientInfo value={value} />
 							</li>
 						))}
@@ -72,8 +72,8 @@ const AdditionalInfo = ({ weight, dimensions, title, nutrition, facts }) => {
 const Reviews = ({ comments }) => {
 	return (
 		<div className="comments">
-			{comments.map((comment) => (
-				<Comment>
+			{comments.map((comment, index) => (
+				<Comment id={`review_${index}`}>
 					<Comment.Author>{comment.author}</Comment.Author>
 					<Comment.Metadata>
 						<div>{comment.date}</div>
@@ -86,7 +86,7 @@ const Reviews = ({ comments }) => {
 
 			<div className="comment-form">
 				<p>Add a review</p>
-				<div class="rating-box">
+				<div className="rating-box">
 					<p>Your Rating:</p>
 					<Rating maxRating={5} size="huge" icon="star" clearable />
 				</div>
