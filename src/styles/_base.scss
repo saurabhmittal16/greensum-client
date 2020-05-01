@@ -14,3 +14,9 @@ h4 {
 input {
 	font-family: $primary-font;
 }
+
+button {
+	&:focus {
+		outline: 0;
+	}
+}
