@@ -1,13 +1,11 @@
 .recently-viewed_index {
-	display: flex !important;
-	flex-wrap: wrap !important;
-	margin: 0px !important;
-	padding: 0px !important;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 60px;
 }
 
 .recently-viewed_wrapper {
 	padding: 0.45em;
-	height: 80% !important;
 	z-index: -10;
 }
 
@@ -22,7 +20,7 @@
 }
 
 .recently-viewed_cardContent {
-	padding-top: 15rem;
+	// padding-top: 15rem;
 	width: 100%;
 	text-align: center;
 	z-index: 1000;
@@ -33,8 +31,6 @@
 	padding: 12px;
 	width: 100%;
 	color: $text-color;
-	background-color: #ffffff90;
-	z-index: 1000;
 }
 
 .recently-viewed_cardContent div b {

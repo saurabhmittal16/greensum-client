@@ -4,6 +4,7 @@ const ViewCard = ({ src, type, name, price, to }) => (
 	<div
 		className="recently-viewed_wrapper"
 		style={{
+			height: 450,
 			width: type === "wide" ? "60%" : "40%",
 		}}
 	>

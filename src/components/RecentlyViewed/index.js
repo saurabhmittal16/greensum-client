@@ -1,8 +1,6 @@
 import React from "react";
 import ViewCard from "./ViewCard";
 
-import { Container } from "semantic-ui-react";
-
 class RecentlyViewed extends React.Component {
 	name = "Lorem Ipsum";
 	price = "Rs. 123";
@@ -11,36 +9,36 @@ class RecentlyViewed extends React.Component {
 
 	render() {
 		return (
-			<Container className="recently-viewed_index">
+			<div className="recently-viewed_index">
 				<ViewCard
-					src="https://www.freedigitalphotos.net/images/img/homepage/394230.jpg"
+					src="/test-images/rectangle1.png"
 					type="wide"
 					name={this.name}
 					price={this.price}
 					to={this.toLink}
 				/>
 				<ViewCard
-					src={"https://static.toiimg.com/photo/72975551.cms"}
+					src="/test-images/rectangle2.png"
 					type="narrow"
 					name={this.name}
 					price={this.price}
 					to={this.toLink}
 				/>
 				<ViewCard
-					src="https://static.toiimg.com/photo/72975551.cms"
+					src="/test-images/rectangle2.png"
 					type="narrow"
 					name={this.name}
 					price={this.price}
 					to={this.toLink}
 				/>
 				<ViewCard
-					src="https://www.freedigitalphotos.net/images/img/homepage/394230.jpg"
+					src="/test-images/rectangle2.png"
 					type="wide"
 					name={this.name}
 					price={this.price}
 					to={this.toLink}
 				/>
-			</Container>
+			</div>
 		);
 	}
 }

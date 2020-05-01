@@ -12,7 +12,7 @@
 
 .imageContainer {
 	margin-right: 2rem;
-	transform: translateX(50%);
+	transform: translateX(25%);
 	min-width: 18rem;
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -32,6 +32,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transform: translateX(-5%);
+	z-index: -1;
 }
 
 .info {
