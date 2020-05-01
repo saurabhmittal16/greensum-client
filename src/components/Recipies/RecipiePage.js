@@ -32,8 +32,8 @@ const RecipiePage = (props) => {
 		<div className="recipie-page">
 			<div className="navigation">
 				<div className="path">
-					<Link href="/">
-						<a>Home &nbsp;&nbsp;</a>
+					<Link href="/recipes">
+						<a>All &nbsp;&nbsp;</a>
 					</Link>
 					>&nbsp;&nbsp;{props.name}
 				</div>
