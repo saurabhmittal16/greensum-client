@@ -14,17 +14,17 @@ const useFormInput = (initialValue) => {
 	};
 };
 
-const Contact_Us = () => {
+const ContactUs = () => {
 	const name = useFormInput("");
 	const email = useFormInput("");
 	const message = useFormInput("");
 	const topRef = useRef(null);
 
-	const scrollToMid = () => {
-		topRef.current.scrollIntoView({ behavior: "smooth" });
-	};
+	// const scrollToMid = () => {
+	// 	topRef.current.scrollIntoView({ behavior: "smooth" });
+	// };
 
-	useEffect(scrollToMid, []);
+	// useEffect(scrollToMid, []);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -111,4 +111,4 @@ const Contact_Us = () => {
 	);
 };
 
-export default Contact_Us;
+export default ContactUs;

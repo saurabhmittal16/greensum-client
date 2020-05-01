@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Contact_Us from "../components/ContactUs";
+import ContactUs from "../components/ContactUs";
 
 const Contact = () => {
 	return (
 		<Layout heading="Get In Touch" subHeading="home/ contact" >
-			<Contact_Us />
+			<ContactUs />
 		</Layout>
 	);
 };
