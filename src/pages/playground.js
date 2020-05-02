@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Hottest from "../components/HottestDeal";
+import Hottest from "../components/RelatedProducts/Carousel";
 
 const Playground = () => {
 	return (

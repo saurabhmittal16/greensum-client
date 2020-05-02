@@ -20,10 +20,19 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-right: 40px;
+	margin: 10px 15px;
 	img {
 		border-radius: 40px;
+		width: 240px;
 	}
+}
+
+.slider-holder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin: 20px 0;
 }
 
 .slider__heading {
@@ -36,4 +45,26 @@
 	font-size: 30px;
 	color: $primary-color;
 	font-weight: bolder;
+}
+
+.slider-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	div {
+		width: 10px;
+		height: 10px;
+		margin-right: 10px;
+		border-radius: 50%;
+		border: none;
+	}
+}
+
+.active-slider-button {
+	background-color: $text-color;
+}
+
+.slider-button {
+	background-color: lighten($text-color, 20%);
 }

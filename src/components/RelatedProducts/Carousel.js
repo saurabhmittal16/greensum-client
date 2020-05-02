@@ -23,12 +23,7 @@ const Carousel = (props) => {
 					}}
 					classNames="fade"
 				>
-					<div
-						style={{
-							display: "flex",
-							flexDirection: "row",
-						}}
-					>
+					<div className="slider-holder">
 						{current.slice(page, page + 4).map((item, index) => {
 							return (
 								<div key={`item_${index}`}>
@@ -39,8 +34,20 @@ const Carousel = (props) => {
 					</div>
 				</CSSTransition>
 			</SwitchTransition>
-			<button onClick={() => setPage(0)}>First</button>
-			<button onClick={() => setPage(4)}>Second</button>
+			<div className="slider-buttons">
+				<div
+					onClick={() => setPage(0)}
+					className={
+						page < 4 ? "active-slider-button" : "slider-button"
+					}
+				></div>
+				<div
+					onClick={() => setPage(4)}
+					className={
+						page >= 4 ? "active-slider-button" : "slider-button"
+					}
+				></div>
+			</div>
 		</div>
 	);
 };
