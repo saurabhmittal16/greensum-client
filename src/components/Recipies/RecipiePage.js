@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import RecipieStep from "./RecipieStep";
 import Router from "next/router";
 import Link from "next/link";
-import { Button, Form } from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 import SearchExampleStandard from "./RecipieSearch";
 
 const RecipiePage = (props) => {

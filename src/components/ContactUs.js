@@ -18,12 +18,12 @@ const ContactUs = () => {
 	const name = useFormInput("");
 	const email = useFormInput("");
 	const message = useFormInput("");
-	const topRef = useRef(null);
+	//const topRef = useRef(null);
 
 	// const scrollToMid = () => {
 	// 	topRef.current.scrollIntoView({ behavior: "smooth" });
 	// };
-
+	//	<div ref={topRef} />
 	// useEffect(scrollToMid, []);
 
 	const handleSubmit = (e) => {
@@ -33,7 +33,6 @@ const ContactUs = () => {
 
 	return (
 		<div className="contact-us">
-			<div ref={topRef} />
 			<div className="contact-us__form">
 				<h2 className="form-header">We'd Love To Hear From You :)</h2>
 				<Form onSubmit={handleSubmit} className="form">
