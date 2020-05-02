@@ -48,7 +48,15 @@ const ProductPrice = ({ price }) => {
 				marginTop: "3rem",
 			}}
 		>
-			<Icon name="rupee sign" size="large" />
+			<p
+				style={{
+					fontSize: "1.8rem",
+					fontWeight: "800",
+					marginRight: "15px",
+				}}
+			>
+				&#8377;
+			</p>
 			<h1
 				style={{
 					marginTop: "1rem",

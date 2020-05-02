@@ -1,101 +1,131 @@
-import React from "react";
-import { Container, Button } from "semantic-ui-react";
-import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
+import React, { useState } from "react";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
-import ProductCard from "./RelatedCard";
-
-const TOTAL_SLIDES = 8;
-const VISIBLE_SLIDES = 4;
-
-// inspired from range function in Python
-const range = num => [...Array(num).keys()];
-
-const CustomCardSlide = ({ index, name, price, image }) => (
-	<Slide index={index}>
-		<ProductCard
-			fluid
-			name={name}
-			price={price}
-			image={image}
-			style={{ minWidth: "200px", maxWidth: "400px" }}
-		/>
-	</Slide>
+const CarouselItem = ({ name, price, url }) => (
+	<div className="slider-element">
+		<img src={url} />
+		<span className="slider__heading">{name}</span>
+		<span className="slider__price">{price}</span>
+	</div>
 );
 
-const RelatedProducts = () => (
-	<Container style={{ paddingTop: "64px" }}>
-		<CarouselProvider
-			visibleSlides={VISIBLE_SLIDES}
-			naturalSlideWidth={1}
-			naturalSlideHeight={1}
-			totalSlides={TOTAL_SLIDES}
-		>
-			<Slider>
-				<CustomCardSlide
-					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-					index={0}
-					name="Fruits"
-					price={120}
-				/>
-				<CustomCardSlide
-					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-					index={1}
-					name="Vegetables"
-					price={100}
-				/>
-				<CustomCardSlide
-					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-					index={2}
-					name="Fruits"
-					price={120}
-				/>
-				<CustomCardSlide
-					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-					index={3}
-					name="Vegetables"
-					price={100}
-				/>
-				<CustomCardSlide
-					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-					index={4}
-					name="Fruits"
-					price={120}
-				/>
-				<CustomCardSlide
-					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-					index={5}
-					name="Vegetables"
-					price={100}
-				/>
-				<CustomCardSlide
-					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-					index={6}
-					name="Fruits"
-					price={120}
-				/>
-				<CustomCardSlide
-					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-					index={7}
-					name="Vegetables"
-					price={100}
-				/>
-			</Slider>
+const Carousel = (props) => {
+	const [page, setPage] = useState(0);
+	const current = props.data;
 
-			<Container textAlign="center">
-				<Button.Group size="mini">
-					{range(TOTAL_SLIDES / VISIBLE_SLIDES).map(index => (
-						<Button
-							as={Dot}
-							key={index * VISIBLE_SLIDES}
-							icon="circle"
-							slide={index * VISIBLE_SLIDES}
-							style={{ background: "white" }}
-						/>
-					))}
-				</Button.Group>
-			</Container>
-		</CarouselProvider>
-	</Container>
-);
+	return (
+		<div>
+			<div
+				style={{
+					textAlign: 'center',
+					fontWeight: 600,
+					fontSize: '35px',
+					lineHeight: '52px',
+					marginBottom: '20px'
+				}}
+			>
+				Related Products
+			</div>
+			<SwitchTransition mode="out-in">
+				<CSSTransition
+					key={page === 0}
+					addEndListener={(node, done) => {
+						node.addEventListener("transitionend", done, false);
+					}}
+					classNames="fade"
+				>
+					<div className="slider-holder">
+						{current.slice(page, page + 4).map((item, index) => {
+							return (
+								<div key={`item_${index}`}>
+									<CarouselItem {...item} />
+								</div>
+							);
+						})}
+					</div>
+				</CSSTransition>
+			</SwitchTransition>
+			<div className="slider-buttons">
+				<div
+					onClick={() => setPage(0)}
+					className={
+						page < 4 ? "active-slider-button" : "slider-button"
+					}
+				></div>
+				<div
+					onClick={() => setPage(4)}
+					className={
+						page >= 4 ? "active-slider-button" : "slider-button"
+					}
+				></div>
+			</div>
+		</div>
+	);
+};
 
-export default RelatedProducts;
+Carousel.defaultProps = {
+	data: [
+		{
+			name: "First",
+			price: 1,
+			url: "/test-images/related1.png",
+		},
+		{
+			name: "Second",
+			price: 2,
+			url: "/test-images/related2.png",
+		},
+		{
+			name: "Third",
+			price: 3,
+			url: "/test-images/related3.png",
+		},
+		{
+			name: "Fourth",
+			price: 4,
+			url: "/test-images/related4.png",
+		},
+		{
+			name: "Second",
+			price: 5,
+			url: "/test-images/related2.png",
+		},
+		{
+			name: "Third",
+			price: 6,
+			url: "/test-images/related3.png",
+		},
+		{
+			name: "First",
+			price: 7,
+			url: "/test-images/related1.png",
+		},
+		{
+			name: "Fourth",
+			price: 8,
+			url: "/test-images/related4.png",
+		},
+		{
+			name: "Fourth",
+			price: 9,
+			url: "/test-images/related4.png",
+		},
+		{
+			name: "First",
+			price: 10,
+			url: "/test-images/related1.png",
+		},
+		{
+			name: "Two",
+			price: 11,
+			url: "/test-images/related2.png",
+		},
+		{
+			name: "Third",
+			price: 12,
+			url: "/test-images/related3.png",
+		},
+	],
+};
+
+export default Carousel;
