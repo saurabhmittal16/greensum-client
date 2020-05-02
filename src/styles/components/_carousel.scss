@@ -1,20 +1,39 @@
 .fade-enter {
-    opacity: 0;
+	transform: translateX(5%);
 }
-
-.fade-exit {
-    opacity: 1;
-}
-
 .fade-enter-active {
-    opacity: 1;
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 40ms, transform 40ms;
+}
+.fade-exit {
+	opacity: 1;
+	transform: translateX(0);
+}
+.fade-exit-active {
+	opacity: 0;
+	transition: opacity 1ms, transform 40ms;
 }
 
-.fade-exit-active {
-    opacity: 0;
+.slider-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 40px;
+	img {
+		border-radius: 40px;
+	}
 }
 
-.fade-enter-active,
-.fade-exit-active {
-    transition: opacity 200ms;
+.slider__heading {
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.slider__price {
+	margin-top: 20px;
+	font-size: 30px;
+	color: $primary-color;
+	font-weight: bolder;
 }
