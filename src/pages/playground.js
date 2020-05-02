@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Services from "../components/Services";
 
 const Playground = () => {
 	return (
 		<Layout>
-			<Services />
+			<h1>Test your components here</h1>
+
 		</Layout>
 	);
 };
