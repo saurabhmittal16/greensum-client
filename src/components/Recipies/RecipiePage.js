@@ -45,7 +45,7 @@ const RecipiePage = (props) => {
 			</div>
 			<div className="top">
 				<div className="heading" ref={topRef}>
-					<h1>{props.name}</h1>
+					<h1 className="header-one">{props.name}</h1>
 				</div>
 				<div className="details">
 					<div className="time-taken">
@@ -70,11 +70,11 @@ const RecipiePage = (props) => {
 			<div className="recipie-part">
 				<div className="recipie-card">
 					<div className="recipie-name">
-						<h1>{props.name}</h1>
+						<h1 className="header-one">{props.name}</h1>
 					</div>
 					<div className="recipie-steps">{val}</div>
 					<div className="recipie-end">
-						<h2>Enjoy your meal :D</h2>
+						<h2 className="header-two">Enjoy your meal :D</h2>
 					</div>
 				</div>
 
