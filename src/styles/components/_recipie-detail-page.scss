@@ -5,15 +5,14 @@
 .path {
 	float: left;
 	font-size: 15px;
-	min-width: 200px;
+	min-width: 150px;
 }
 
 .top {
-	min-width: 750px;
+	min-width: 600px;
 }
 
 .navigation {
-	width: 100%;
 	padding: 3% 2%;
 	display: inline-block;
 	min-width: 500px;
@@ -26,29 +25,7 @@
 	margin-left: auto;
 	position: relative;
 	float: right;
-	min-width: 250px;
 }
-
-/*.searchTerm {
-	float: left;
-	width: 80%;
-	padding: 10px;
-	height: 20px;
-	border-radius: 10px;
-	outline: none;
-	border-width: 0 0 3px 0;
-}
-
-.searchButton {
-	width: 20%;
-	float: right;
-	padding: 1px;
-	text-align: center;
-	border-radius: 0 5px 5px 0;
-	cursor: pointer;
-	font-size: 15px;
-	border-style: none;
-}*/
 
 .heading {
 	margin: auto;
@@ -56,7 +33,7 @@
 	padding: 2%;
 }
 
-.recipe-name > h1 {
+.header-one {
 	font-weight: bold;
 	font-size: 35px;
 }
@@ -74,46 +51,50 @@
 }
 
 .fav-button {
-	color: white;
 	float: left;
 	align-items: center;
-	width: 5%;
-	margin-left: 14%;
-	padding-left: 1px;
-	overflow: hidden;
+	width: 4%;
+	margin-left: -5%;
+	overflow: unset;
 	z-index: -1;
-	min-width: 45px;
+	min-width: 40px;
 }
 
 .recipie-page {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	margin-bottom: 100px;
-	width: 100%;
-	min-width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 70%;
+}
+
+.recipie-page > * {
+	flex: 0 0 100%;
 }
 
 .recipie-part {
-	min-width: 700px;
-	margin-left: auto;
+	margin-left: 12%;
 	margin-right: auto;
-	width: 1080px;
 }
 
 .recipie-card {
 	float: left;
+	width: 75%;
 	text-align: left;
 	box-shadow: 5px 5px 7px 7px rgba(42, 67, 141, 0.2);
 	border-radius: 20px;
 	padding: 5%;
 	overflow: auto;
 	z-index: 0;
-	min-width: 450px;
 }
 .recipie-image {
-	margin-left: -75px;
+	margin-left: -10%;
 	margin-top: 50px;
 	float: left;
-	min-width: 250px;
-	overflow: none;
+	width: 10%;
 }
 
 .header-two {
@@ -129,13 +110,13 @@
 
 .recipie-step {
 	margin-bottom: 50px;
-	min-width: 200px;
 	padding: 4px;
 }
 
 .step-info {
 	text-align: left;
-	margin: auto 10%;
+	margin: auto 5%;
+	margin-right: 30px;
 	vertical-align: top;
 	margin-bottom: 25px;
 	padding-left: 20px;

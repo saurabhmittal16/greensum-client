@@ -22,7 +22,7 @@ export default class SearchExampleStandard extends Component {
 	handleResultSelect = (e, { result }) => {
 		this.setState({ value: result.name });
 		const { pathname } = Router;
-		return Router.push(`/recipies/${result.id}`);
+		return Router.push(`/recipes/${result.id}`);
 	};
 
 	handleSearchChange = (e, { value }) => {
