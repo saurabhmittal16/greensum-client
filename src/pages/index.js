@@ -3,8 +3,8 @@ import NavBar from "../components/Header/NavBar";
 import Banner from "../components/LandingPage/Banner";
 import Search from "../components/LandingPage/Search";
 import Featured from "../components/LandingPage/FeaturedProducts";
-import LowerHalf from "../components/FeaturedProduct";
 import Footer from "../components/Footer";
+import HottestDeal from "../components/HottestDeal";
 // import { connect } from "react-redux";
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
 				<Banner />
 				<Search />
 				<Featured />
-				<LowerHalf />
+				<HottestDeal />
 			</div>
 			<Footer />
 		</React.Fragment>
