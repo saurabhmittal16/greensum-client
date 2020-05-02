@@ -1,12 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Hottest from "../components/HottestDeal";
+import Services from "../components/Services";
 
 const Playground = () => {
 	return (
 		<Layout>
-			{/* <h1>Test your components here</h1> */}
-			<Hottest />
+			<Services />
 		</Layout>
 	);
 };
