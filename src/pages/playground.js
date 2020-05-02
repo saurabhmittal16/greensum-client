@@ -1,11 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
-import EmailBanner from "../components/EmailBanner";
 
 const Playground = () => {
 	return (
 		<Layout>
-			<EmailBanner />
+			<h1>Test your components here.</h1>
 		</Layout>
 	);
 };
