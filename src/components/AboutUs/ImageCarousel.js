@@ -1,11 +1,4 @@
-import {
-	CarouselProvider,
-	Slider,
-	Slide,
-	ButtonBack,
-	Dot,
-	ButtonNext,
-} from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 import React from "react";
 import { Image, Button } from "semantic-ui-react";
 

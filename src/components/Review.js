@@ -3,9 +3,8 @@ import { Item, Container, Rating, Divider } from "semantic-ui-react";
 import AddReview from "./AddReview";
 
 const ReviewItem = (props) => {
-	let { name, date, text, profilePic, rating } = props;
+	let { name, date, text, rating } = props;
 	return (
-		// for the time being I'm using a sample image
 		<Item>
 			<Item.Image
 				src="../../test-images/avatar.png"
@@ -63,7 +62,6 @@ const Review = (props) => {
 	);
 };
 
-//
 Review.defaultProps = {
 	userReviews: [
 		{
@@ -76,7 +74,7 @@ Review.defaultProps = {
 				year: 2020,
 			},
 			rating: 3,
-			profilePic: "../../public/avatar.png",
+			profilePic: null,
 		},
 		{
 			name: "jon doe",

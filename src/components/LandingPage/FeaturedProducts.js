@@ -8,9 +8,11 @@ class Product extends React.Component {
 			liked: false,
 		};
 	}
+
 	like = () => {
 		this.setState((state) => ({ liked: !state.liked }));
 	};
+
 	render() {
 		return (
 			<div>

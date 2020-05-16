@@ -18,17 +18,10 @@ const ContactUs = () => {
 	const name = useFormInput("");
 	const email = useFormInput("");
 	const message = useFormInput("");
-	//const topRef = useRef(null);
-
-	// const scrollToMid = () => {
-	// 	topRef.current.scrollIntoView({ behavior: "smooth" });
-	// };
-	//	<div ref={topRef} />
-	// useEffect(scrollToMid, []);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(name, email, message);
+		// Handle submit form here
 	};
 
 	return (

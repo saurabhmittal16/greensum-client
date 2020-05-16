@@ -2,18 +2,9 @@ import React from "react";
 import { Grid, Card, Image } from "semantic-ui-react";
 
 const ProductCard = (props) => {
-	let data = props["data"];
-	let src = data["src"],
-		name = data["name"],
-		price = data["price"];
+	let { src, name, price } = props.data;
+
 	return (
-		// <Grid.Column>
-		//     <Container className='box'>
-		//         <Image src={src} className='img'/>
-		//             <div className='textName'>{name}</div>
-		//             <div className='textPrice'>{price}</div>
-		//     </Container>
-		// </Grid.Column>
 		<Grid.Column>
 			<Card className="box">
 				<Image className="img" src={src} />

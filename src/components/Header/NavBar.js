@@ -39,7 +39,6 @@ const MenuItemLinkIcon = ({ path, name, icon }) => (
 
 export default function Header({ heading, subHeading }) {
 	const router = useRouter();
-	// console.log(router.pathname.slice(1));
 
 	return (
 		<Menu
