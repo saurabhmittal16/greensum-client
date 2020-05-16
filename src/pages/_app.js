@@ -3,7 +3,6 @@ import App from "next/app";
 import withRedux from "next-redux-wrapper";
 import "semantic-ui-css/semantic.min.css";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import "../styles.css";
 import "../styles/main.scss";
 import { initStore } from "../redux";
 
