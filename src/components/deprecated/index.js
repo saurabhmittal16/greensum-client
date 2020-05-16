@@ -1,80 +1,101 @@
 import React from "react";
-import Card from "../Related/RelatedCard";
-import { Header } from "semantic-ui-react";
+import { Container, Button } from "semantic-ui-react";
+import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 
-export default function Related() {
-	return (
-		<div style={{ marginTop: "64px" }}>
-			<Header as="h1">Related Products</Header>
-			<div
-				style={{
-					maxHeight: "400px",
-					overflowX: "scroll",
-					overflowY: "hidden",
-					whiteSpace: "nowrap",
-				}}
-			>
-				<div
-					style={{
-						display: "inline-block",
-						verticalAlign: "middle",
-						padding: "20px",
-					}}
-				>
-					<Card
-						name="Lorem Ipsum"
-						price="123"
-						image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-						link="#"
-						style={{ minWidth: "200px", maxWidth: "300px" }}
-					/>
-				</div>
-				<div
-					style={{
-						display: "inline-block",
-						verticalAlign: "middle",
-						padding: "20px",
-					}}
-				>
-					<Card
-						name="Lorem Ipsum"
-						price="123"
-						image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-						link="#"
-						style={{ minWidth: "200px", maxWidth: "300px" }}
-					/>
-				</div>
-				<div
-					style={{
-						display: "inline-block",
-						verticalAlign: "middle",
-						padding: "20px",
-					}}
-				>
-					<Card
-						name="Lorem Ipsum"
-						price="123"
-						image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-						link="#"
-						style={{ minWidth: "200px", maxWidth: "300px" }}
-					/>
-				</div>
-				<div
-					style={{
-						display: "inline-block",
-						verticalAlign: "middle",
-						padding: "20px",
-					}}
-				>
-					<Card
-						name="Lorem Ipsum"
-						price="123"
-						image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
-						link="#"
-						style={{ minWidth: "200px", maxWidth: "300px" }}
-					/>
-				</div>
-			</div>
-		</div>
-	);
-}
+import ProductCard from "./RelatedCard";
+
+const TOTAL_SLIDES = 8;
+const VISIBLE_SLIDES = 4;
+
+// inspired from range function in Python
+const range = num => [...Array(num).keys()];
+
+const CustomCardSlide = ({ index, name, price, image }) => (
+	<Slide index={index}>
+		<ProductCard
+			fluid
+			name={name}
+			price={price}
+			image={image}
+			style={{ minWidth: "200px", maxWidth: "400px" }}
+		/>
+	</Slide>
+);
+
+const RelatedProducts = () => (
+	<Container style={{ paddingTop: "64px" }}>
+		<CarouselProvider
+			visibleSlides={VISIBLE_SLIDES}
+			naturalSlideWidth={1}
+			naturalSlideHeight={1}
+			totalSlides={TOTAL_SLIDES}
+		>
+			<Slider>
+				<CustomCardSlide
+					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
+					index={0}
+					name="Fruits"
+					price={120}
+				/>
+				<CustomCardSlide
+					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
+					index={1}
+					name="Vegetables"
+					price={100}
+				/>
+				<CustomCardSlide
+					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
+					index={2}
+					name="Fruits"
+					price={120}
+				/>
+				<CustomCardSlide
+					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
+					index={3}
+					name="Vegetables"
+					price={100}
+				/>
+				<CustomCardSlide
+					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
+					index={4}
+					name="Fruits"
+					price={120}
+				/>
+				<CustomCardSlide
+					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
+					index={5}
+					name="Vegetables"
+					price={100}
+				/>
+				<CustomCardSlide
+					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
+					index={6}
+					name="Fruits"
+					price={120}
+				/>
+				<CustomCardSlide
+					image="https://media.gettyimages.com/photos/different-types-of-food-on-rustic-wooden-table-picture-id861188910?s=612x612"
+					index={7}
+					name="Vegetables"
+					price={100}
+				/>
+			</Slider>
+
+			<Container textAlign="center">
+				<Button.Group size="mini">
+					{range(TOTAL_SLIDES / VISIBLE_SLIDES).map(index => (
+						<Button
+							as={Dot}
+							key={index * VISIBLE_SLIDES}
+							icon="circle"
+							slide={index * VISIBLE_SLIDES}
+							style={{ background: "white" }}
+						/>
+					))}
+				</Button.Group>
+			</Container>
+		</CarouselProvider>
+	</Container>
+);
+
+export default RelatedProducts;

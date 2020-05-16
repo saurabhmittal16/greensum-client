@@ -6,6 +6,8 @@ import Featured from "../components/LandingPage/FeaturedProducts";
 import Footer from "../components/Footer";
 import HottestDeal from "../components/HottestDeal";
 import Services from "../components/Services";
+import EmailBanner from "../components/EmailBanner";
+import ChooseUs from "../components/ChooseUs";
 // import { connect } from "react-redux";
 
 const Home = () => {
@@ -18,6 +20,8 @@ const Home = () => {
 				<Featured />
 				<HottestDeal />
 				<Services />
+				<EmailBanner />
+				<ChooseUs />
 			</div>
 			<Footer />
 		</React.Fragment>

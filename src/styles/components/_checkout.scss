@@ -1,0 +1,33 @@
+.promo_parent {
+	border: 1px solid #c3c3c3;
+	border-radius: 16px;
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	margin: 2em auto;
+	color: #046b2d;
+}
+
+.promo__text {
+	display: inline;
+	margin-right: 2em;
+	font-size: 1.5rem;
+	letter-spacing: 0.005em;
+	font-weight: bold;
+}
+
+.item-info__parent{
+	box-shadow: 30px 30px 80px rgba(55, 84, 170, 0.1);
+	border-radius:  40px;
+	padding: 2em;
+	margin: 3rem auto;
+};
+
+.item-info__headers{
+	background: #EEEEEE;
+	border-radius: 16px;
+	padding: 1rem;
+	margin-bottom: 2rem;
+};

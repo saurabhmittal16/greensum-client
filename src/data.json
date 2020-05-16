@@ -13,7 +13,7 @@
 			},
 			{
 				"step_num": "3",
-				"step_content": "Sed tempor est et dictum consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				"step_content": "Sed tempor est et dictum consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 			},
 			{
 				"step_num": "4",
@@ -46,7 +46,7 @@
 			},
 			{
 				"step_num": "3",
-				"step_content": "Sed tempor est et dictum consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				"step_content": "Sed tempor est et dictum consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 			},
 			{
 				"step_num": "4",
@@ -56,7 +56,7 @@
 		"calories": "500",
 		"cook_time": "30",
 		"img_src": [
-			"https://picsum.photos/id/240/250/250",
+			"https://picsum.photos/id/241/250/250",
 			"https://picsum.photos/id/241/250/250",
 			"https://picsum.photos/id/242/250/250"
 		]
@@ -100,7 +100,7 @@
 			},
 			{
 				"step_num": "3",
-				"step_content": "Sed tempor est et dictum consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				"step_content": "Sed tempor est et dictum consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
 			},
 			{
 				"step_num": "4",
