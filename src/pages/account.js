@@ -1,13 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
+import MyAccount from "../components/MyAccount";
 
 const Account = () => {
 	return (
 		<Layout heading="My Account">
-			<h1>Hello From account</h1>
+			<MyAccount />
 		</Layout>
 	);
 };
 
 export default Account;
-	
