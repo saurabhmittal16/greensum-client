@@ -7,7 +7,7 @@ const ReviewItem = (props) => {
 	return (
 		<Item>
 			<Item.Image
-				src="../../test-images/avatar.png"
+				src="../../images/avatar.png"
 				size="tiny"
 				style={{ float: "left" }}
 			/>

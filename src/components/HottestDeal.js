@@ -9,6 +9,6 @@ export default () => (
 			</h1>
 			<button className="btn">Grab it</button>
 		</div>
-		<img src="/test-images/hottest.png" style={{ width: "50%" }} />
+		<img src="/images/hottest.png" style={{ width: "50%" }} />
 	</div>
 );

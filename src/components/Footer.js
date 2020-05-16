@@ -114,7 +114,7 @@ const Footer = () => {
 						<Grid.Column>
 							<Segment basic style={{ margin: "auto" }}>
 								<img
-									src="/footer/Footer logo.png"
+									src="/images/Footer logo.png"
 									alt="footer logo "
 									style={{
 										display: "block",

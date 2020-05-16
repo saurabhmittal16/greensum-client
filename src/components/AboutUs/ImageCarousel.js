@@ -17,19 +17,19 @@ const ImageCarousel = () => (
 		<Slider>
 			<Slide index={0} style={{ minWidth: "650px" }}>
 				<div className="about__slide">
-					<Image size="big" src="/test-images/about-img.png" />
+					<Image size="big" src="/images/about-img.png" />
 				</div>
 			</Slide>
 
 			<Slide index={1}>
 				<div className="about__slide">
-					<Image size="big" src="/test-images/about-img.png" />
+					<Image size="big" src="/images/about-img.png" />
 				</div>
 			</Slide>
 
 			<Slide index={2}>
 				<div className="about__slide">
-					<Image size="big" src="/test-images/about-img.png" />
+					<Image size="big" src="/images/about-img.png" />
 				</div>
 			</Slide>
 		</Slider>

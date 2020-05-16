@@ -14,7 +14,7 @@ export default function Banner() {
 			<Grid stackable>
 				<Grid.Row columns={2} style={{ height: "100%" }}>
 					<Grid.Column>
-						<img src="./landing-page/ecoFriendly.png" />
+						<img src="./images/ecoFriendly.png" />
 					</Grid.Column>
 					<Grid.Column style={{ paddingLeft: "14em" }}>
 						<div className="banner">

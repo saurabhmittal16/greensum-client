@@ -17,7 +17,7 @@ export default function Banner() {
 						<Search fluid placeholder="Search Here" />
 					</Grid.Column>
 					<Grid.Column width={4} style={{ padding: 0 }}>
-						<img src="./landing-page/yogurt.png" style={img} />
+						<img src="./images/yogurt.png" style={img} />
 					</Grid.Column>
 				</Grid.Row>
 			</Grid>

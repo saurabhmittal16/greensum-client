@@ -61,22 +61,22 @@ export default function FeaturedProducts(props) {
 FeaturedProducts.defaultProps = {
 	data: [
 		{
-			src: "/test-images/featprod.png",
+			src: "/images/featprod.png",
 			name: "Lorem Ipsum",
 			cost: "100",
 		},
 		{
-			src: "/test-images/featprod.png",
+			src: "/images/featprod.png",
 			name: "Lorem Ipum",
 			cost: "100",
 		},
 		{
-			src: "/test-images/featprod.png",
+			src: "/images/featprod.png",
 			name: "Lorem Ipum",
 			cost: "100",
 		},
 		{
-			src: "/test-images/featprod.png",
+			src: "/images/featprod.png",
 			name: "Lorem Ipum",
 			cost: "100",
 		},

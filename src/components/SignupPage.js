@@ -8,7 +8,7 @@ export default class Login_page extends React.Component {
 			<div className="login-page">
 				<div className="login-page__image">
 					<Image
-						src="/test-images/Milk-carton-mockup.jpg"
+						src="/images/Milk-carton-mockup.jpg"
 						className="login-image"
 						bordered
 						fluid

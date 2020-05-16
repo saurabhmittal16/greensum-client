@@ -69,7 +69,7 @@ ItemInfo.defaultProps = {
 	data: [
 		{
 			key: "1",
-			img: "/test-images/cheese-one.jpg",
+			img: "/images/cheese-one.jpg",
 			heading: "Cheese Block",
 			info:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque.....",
@@ -78,7 +78,7 @@ ItemInfo.defaultProps = {
 		},
 		{
 			key: "2",
-			img: "/test-images/cheese-one.jpg",
+			img: "/images/cheese-one.jpg",
 			heading: "Cheese Block",
 			info:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque.....",
