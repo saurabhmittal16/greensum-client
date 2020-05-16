@@ -51,7 +51,7 @@ const Footer = () => {
 				paddingBottom: "0",
 				backgroundColor: "#046B2D",
 				borderRadius: "40px 40px 0px 0px ",
-				marginTop: 40
+				marginTop: 40,
 			}}
 		>
 			<Container>

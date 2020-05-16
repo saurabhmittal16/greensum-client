@@ -19,7 +19,7 @@ const AddReview = () => {
 	const name = useFormInput("");
 	const email = useFormInput("");
 
-	const handleSubmit = e => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log(review, name, email);
 	};

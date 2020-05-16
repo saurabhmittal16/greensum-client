@@ -4,7 +4,7 @@ import Signup from "../components/SignupPage";
 
 const Playground = () => {
 	return (
-		<Layout heading="Signup" >
+		<Layout heading="Signup">
 			<Signup />
 		</Layout>
 	);

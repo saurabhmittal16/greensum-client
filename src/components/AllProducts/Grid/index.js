@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Card, Image } from "semantic-ui-react";
 
-const ProductCard = props => {
+const ProductCard = (props) => {
 	let data = props["data"];
 	let src = data["src"],
 		name = data["name"],
@@ -25,7 +25,7 @@ const ProductCard = props => {
 		</Grid.Column>
 	);
 };
-const product3X3grid = props => {
+const product3X3grid = (props) => {
 	let data = props["data"];
 	return (
 		<div>

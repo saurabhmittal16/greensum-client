@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-String.prototype.toTitleCase = function() {
+String.prototype.toTitleCase = function () {
 	text = this;
 	first = text[0];
 	rest = text.slice(1);
@@ -18,7 +18,7 @@ const files = [
 	"playground",
 ];
 
-files.forEach(file => {
+files.forEach((file) => {
 	fs.writeFileSync(
 		`../pages/${file}.js`,
 		`import React from "react";
@@ -34,7 +34,7 @@ const ${file.toTitleCase()} = () => {
 
 export default ${file.toTitleCase()};
 	`,
-		function(err) {
+		function (err) {
 			console.log(err);
 		}
 	);

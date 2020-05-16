@@ -2,7 +2,7 @@ import React from "react";
 import { Item, Container, Rating, Divider } from "semantic-ui-react";
 import AddReview from "./AddReview";
 
-const ReviewItem = props => {
+const ReviewItem = (props) => {
 	let { name, date, text, profilePic, rating } = props;
 	return (
 		// for the time being I'm using a sample image
@@ -34,7 +34,7 @@ const ReviewItem = props => {
 	);
 };
 
-const Review = props => {
+const Review = (props) => {
 	let { userReviews } = props;
 	return (
 		<Container

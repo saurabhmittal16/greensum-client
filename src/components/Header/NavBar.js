@@ -52,11 +52,7 @@ export default function Header({ heading, subHeading }) {
 			}}
 		>
 			<MenuItemLink name="Home" path="/" current={router.pathname} />
-			<MenuItemLink
-				name="Shop"
-				path="/shop"
-				current={router.pathname}
-			/>
+			<MenuItemLink name="Shop" path="/shop" current={router.pathname} />
 			<MenuItemLink
 				name="About"
 				path="/about"
@@ -73,10 +69,7 @@ export default function Header({ heading, subHeading }) {
 				current={router.pathname}
 			/>
 
-			<img
-				src="/logo.png"
-				style={{ margin: "auto", height: "100%" }}
-			/>
+			<img src="/logo.png" style={{ margin: "auto", height: "100%" }} />
 
 			<Menu.Item>
 				<CustomIcon name="call" />

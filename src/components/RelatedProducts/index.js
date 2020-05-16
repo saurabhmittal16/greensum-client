@@ -17,11 +17,11 @@ const Carousel = (props) => {
 		<div>
 			<div
 				style={{
-					textAlign: 'center',
+					textAlign: "center",
 					fontWeight: 600,
-					fontSize: '35px',
-					lineHeight: '52px',
-					marginBottom: '20px'
+					fontSize: "35px",
+					lineHeight: "52px",
+					marginBottom: "20px",
 				}}
 			>
 				Related Products

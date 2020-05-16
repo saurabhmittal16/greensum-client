@@ -1,44 +1,44 @@
 .emailbanner {
-    margin-top: 150px;
-    background-color: #489064;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 10rem;
-    
-    padding: 0 13rem;
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
+	margin-top: 150px;
+	background-color: #489064;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 10rem;
 
-    .emailbanner__title {
-        font-weight: 500;
-        font-size: 55px;
-        line-height: 128%;
-    }
+	padding: 0 13rem;
+	width: 100vw;
+	position: relative;
+	left: calc(-50vw + 50%);
 
-    .emailbanner_input {
-        display: flex;
-        flex-direction: row;
+	.emailbanner__title {
+		font-weight: 500;
+		font-size: 55px;
+		line-height: 128%;
+	}
 
-        input {
-            border-radius: 40.5px;
-            font-family: Poppins;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 30px;
-            border: none;
-        }
+	.emailbanner_input {
+		display: flex;
+		flex-direction: row;
 
-        button {
-            height: 52px;
-            width: 52px;
-            text-align: center;
-            background-color: white;
-            border: none;
-            border-radius: 50%;
-            margin-left: 20px;
-        }
-    }
+		input {
+			border-radius: 40.5px;
+			font-family: Poppins;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 30px;
+			border: none;
+		}
+
+		button {
+			height: 52px;
+			width: 52px;
+			text-align: center;
+			background-color: white;
+			border: none;
+			border-radius: 50%;
+			margin-left: 20px;
+		}
+	}
 }

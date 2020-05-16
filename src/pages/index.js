@@ -14,7 +14,7 @@ const Home = () => {
 	return (
 		<React.Fragment>
 			<NavBar />
-			<div className='container main'>
+			<div className="container main">
 				<Banner />
 				<Search />
 				<Featured />
