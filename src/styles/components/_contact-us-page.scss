@@ -1,14 +1,16 @@
 .contact-us {
-	display: flex, inline-block;
-	align-self: center;
-	position: relative;
-	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
 	box-shadow: 5px 5px 5px rgba(42, 67, 141, 0.2);
 	border-radius: 20px;
 	padding: $medium-space;
-	overflow: auto;
-	z-index: 999;
-	min-width: 850px;
+	width: 90%;
+	margin-left: -2.5%;
+	min-width: 400px;
+}
+
+.contact-us > * {
+	flex: 1;
 }
 
 .form-header {
@@ -21,18 +23,14 @@
 	margin-left: 5px;
 	margin-top: 5px;
 	padding: 1px;
-	width: 45%;
 	position: relative;
-	float: left;
-	min-width: 450px;
+	width: 40%;
 }
 
 .contact-us__info {
 	width: 40%;
-	float: right;
 	padding: 3%;
 	text-align: center left;
-	min-width: 250px;
 	margin-left: auto;
 	margin-right: auto;
 }

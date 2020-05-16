@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import ProductDetails from "../components/ProductDetails";
 import MainProduct from "../components/MainProduct";
+import RelatedProducts from "../components/RelatedProducts";
 
 // Sample Props :
 
@@ -70,6 +71,7 @@ const Product = () => {
 				additionalInfo={additionalInfo}
 				description={description}
 			/>
+			<RelatedProducts />
 		</Layout>
 	);
 };

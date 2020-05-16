@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import RecipieStep from "./RecipieStep";
 import Router from "next/router";
 import Link from "next/link";
-import { Button, Form } from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 import SearchExampleStandard from "./RecipieSearch";
 
 const RecipiePage = (props) => {
@@ -45,7 +45,7 @@ const RecipiePage = (props) => {
 			</div>
 			<div className="top">
 				<div className="heading" ref={topRef}>
-					<h1>{props.name}</h1>
+					<h1 className="header-one">{props.name}</h1>
 				</div>
 				<div className="details">
 					<div className="time-taken">
@@ -58,23 +58,24 @@ const RecipiePage = (props) => {
 					</div>
 				</div>
 			</div>
-			<div className="fav-button">
-				<Button
-					onClick={() => {
-						fav === false ? setFav(true) : setFav(false);
-					}}
-				>
-					{bat}
-				</Button>
-			</div>
+
 			<div className="recipie-part">
+				<div className="fav-button">
+					<Button
+						onClick={() => {
+							fav === false ? setFav(true) : setFav(false);
+						}}
+					>
+						{bat}
+					</Button>
+				</div>
 				<div className="recipie-card">
 					<div className="recipie-name">
-						<h1>{props.name}</h1>
+						<h1 className="header-one">{props.name}</h1>
 					</div>
 					<div className="recipie-steps">{val}</div>
 					<div className="recipie-end">
-						<h2>Enjoy your meal :D</h2>
+						<h2 className="header-two">Enjoy your meal :D</h2>
 					</div>
 				</div>
 
@@ -85,7 +86,7 @@ const RecipiePage = (props) => {
 			<div className="page-change">
 				<div className="prev">
 					<Button
-						onClick={() => Router.push(`/recipies/${props.id - 1}`)}
+						onClick={() => Router.push(`/recipes/${props.id - 1}`)}
 						disabled={props.id < 2}
 					>
 						<i className="angle left icon"></i>
@@ -95,7 +96,7 @@ const RecipiePage = (props) => {
 				<div className="next">
 					<Button
 						onClick={() =>
-							Router.push(`/recipies/${parseInt(props.id) + 1}`)
+							Router.push(`/recipes/${parseInt(props.id) + 1}`)
 						}
 						disabled={parseInt(props.id) === props.max_id}
 					>

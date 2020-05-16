@@ -53,6 +53,11 @@ export default function Header({ heading, subHeading }) {
 		>
 			<MenuItemLink name="Home" path="/" current={router.pathname} />
 			<MenuItemLink
+				name="Shop"
+				path="/shop"
+				current={router.pathname}
+			/>
+			<MenuItemLink
 				name="About"
 				path="/about"
 				current={router.pathname}
@@ -80,6 +85,6 @@ export default function Header({ heading, subHeading }) {
 			<MenuItemLinkIcon name="Search" path="/search" icon="search" />
 			<MenuItemLinkIcon name="Account" path="/account" icon="user" />
 			<MenuItemLinkIcon name="Cart" path="/cart" icon="cart" />
-		</Menu>			
+		</Menu>
 	);
 }
